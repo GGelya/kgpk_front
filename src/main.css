@@ -1,0 +1,145 @@
+/* main font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* colors  */
+    --text_color_secondary: 255 255 255;
+    --text_color_primary: 0 0 0;
+    --text_color_links: 0 34 129;
+
+    --bg_color: 255 255 255;
+
+    --element_color: 255 255 255;
+
+    --basic_color_1: 0 76 224;
+    --basic_color_2: 0 34 129;
+    --basic_color_3: 35 35 35;
+    --basic_color_4: 0 43 162;
+
+    --basic_color_table_title: 228 228 228;
+    --basic_color_table_body: 242 242 242;
+
+    --basic_color_deco1: 0 49 188;
+    --basic_color_deco2: 38 102 228;
+    --basic_color_deco3: 27 86 216;
+
+    /* fontsize  */
+
+    --fluid: clamp(0.75rem, 2.5vw + 0.5rem, 1.25rem);
+    --fluid_title: clamp(1.25rem, 4vw + 0.5rem, 2.25rem);
+    --fluid_title_type2: clamp(1rem, 4vw + 0.5rem, 1.875rem);
+    --fluid_subtitle: clamp(0.75rem, 2vw + 0.5rem, 1.375rem);
+    --fluid_menu: clamp(1rem, 2vw + 0.5rem, 1.125rem);
+    --fluid_menu_section: clamp(1.25rem, 2vw + 1rem, 1.75rem);
+    --fluid_card_title: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+    --fluid_card_studActiv: clamp(0.75rem, 2.5vw + 0.5rem, 1.125rem);
+    --fluid_card_studActiv_title: clamp(0.875rem, 2.5vw + 0.5rem, 1.5rem);
+  }
+
+  .lv1{
+    --fluid: clamp(0.75rem, 2.5vw + 0.5rem, 1.25rem);
+    --fluid_title: clamp(1.25rem, 4vw + 0.5rem, 2.25rem);
+    --fluid_title_type2: clamp(1rem, 4vw + 0.5rem, 1.875rem);
+    --fluid_subtitle: clamp(0.75rem, 2vw + 0.5rem, 1.375rem);
+    --fluid_menu: clamp(1rem, 2vw + 0.5rem, 1.125rem);
+    --fluid_menu_section: clamp(1.25rem, 2vw + 1rem, 1.75rem);
+    --fluid_card_title: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+    --fluid_card_studActiv: clamp(0.75rem, 2.5vw + 0.5rem, 1.125rem);
+    --fluid_card_studActiv_title: clamp(0.875rem, 2.5vw + 0.5rem, 1.5rem);
+  }
+
+  .lv2{
+    --fluid: clamp(0.95rem, 2.5vw + 0.5rem, 1.45rem);
+  --fluid_title: clamp(1.45rem, 4vw + 0.5rem, 2.45rem);
+  --fluid_title_type2: clamp(1.125rem, 4vw + 0.625rem, 2rem);
+  --fluid_subtitle: clamp(0.875rem, 2vw + 0.5rem, 1.5rem);
+  --fluid_menu: clamp(1.2rem, 2vw + 0.5rem, 1.325rem);
+  --fluid_menu_section: clamp(1.45rem, 2vw + 1rem, 1.95rem);
+  --fluid_card_title: clamp(1.2rem, 2.5vw + 0.5rem, 1.45rem);
+  --fluid_card_studActiv: clamp(0.95rem, 2.5vw + 0.5rem, 1.325rem);
+  --fluid_card_studActiv_title: clamp(1.075rem, 2.5vw + 0.5rem, 1.7rem);
+  }
+
+  .lv3{
+    --fluid: clamp(1rem, 2.5vw + 0.75rem, 1.5rem);
+    --fluid_title: clamp(1.5rem, 4vw + 0.75rem, 2.5rem);
+    --fluid_title_type2: clamp(1.25rem, 4vw + 0.75rem, 2.125rem);
+    --fluid_subtitle: clamp(1rem, 2vw + 0.5rem, 1.625rem);
+    --fluid_menu: clamp(1.25rem, 2vw + 0.75rem, 1.325rem);
+    --fluid_menu_section: clamp(1.5rem, 2vw + 1.25rem, 1.95rem);
+    --fluid_card_title: clamp(1.25rem, 2.5vw + 0.75rem, 1.5rem);
+    --fluid_card_studActiv: clamp(1rem, 2.5vw + 0.75rem, 1.325rem);
+    --fluid_card_studActiv_title: clamp(1.125rem, 2.5vw + 0.75rem, 1.7rem);
+  }
+
+  .ver1 {
+    --text_color_secondary: 0 0 0;
+    --text_color_primary: 0 0 0;
+    --text_color_links: 0 0 0;
+
+    --bg_color: 255 255 255;
+
+    --element_color: 0 0 0;
+
+    --basic_color_1: 255 255 255;
+    --basic_color_2: 255 255 255;
+    --basic_color_3: 255 255 255;
+    --basic_color_4: 255 255 255;
+
+    --basic_color_table_title: 255 255 255;
+    --basic_color_table_body: 255 255 255;
+
+    --basic_color_deco1: 255 255 255;
+    --basic_color_deco2: 255 255 255;
+    --basic_color_deco3: 255 255 255;
+  }
+
+  .ver2 {
+    --text_color_secondary: 255 255 255;
+    --text_color_primary: 255 255 255;
+    --text_color_links: 255 255 255;
+
+    --bg_color: 0 0 0;
+
+    --element_color: 255 255 255;
+
+    --basic_color_1: 0 0 0;
+    --basic_color_2: 0 0 0;
+    --basic_color_3: 0 0 0;
+    --basic_color_4: 0 0 0;
+
+    --basic_color_table_title: 0 0 0;
+    --basic_color_table_body: 0 0 0;
+
+    --basic_color_deco1: 0 0 0;
+    --basic_color_deco2: 0 0 0;
+    --basic_color_deco3: 0 0 0;
+  }
+
+  .ver3 {
+    --text_color_secondary: 169 228 77;
+    --text_color_primary: 169 228 77;
+    --text_color_links: 169 228 77;
+
+    --bg_color: 59 39 22;
+
+    --element_color: 169 228 77;
+
+    --basic_color_1: 59 39 22;
+    --basic_color_2: 59 39 22;
+    --basic_color_3: 59 39 22;
+    --basic_color_4: 59 39 22;
+
+    --basic_color_table_title: 59 39 22;
+    --basic_color_table_body: 59 39 22;
+
+    --basic_color_deco1: 59 39 22;
+    --basic_color_deco2: 59 39 22;
+    --basic_color_deco3: 59 39 22;
+  }
+}

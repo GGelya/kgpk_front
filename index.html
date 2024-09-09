@@ -1,0 +1,3088 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Курский Государственный Политехнический Колледж - центр многопрофильного образования с устоявшимися традициями. Обучение ведется по специальностям, востребованным на рынке труда, включая профессии из списка 50 новых и перспективных, рекомендованных Министерством труда РФ."
+    />
+    <meta
+      name="keywords"
+      content="кгпк, колледж, курск, спо в курске, курский государственный политехнический колледж, обучение в курске, образование, спо"
+    />
+    <link rel="stylesheet" href="./public/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preload" as="image" href="./src/img/bcg-main.webp" />
+    <link rel="preload" as="image" href="./src/img/polaroids.webp" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="./scripts.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="./animations.js"></script>
+    <title>ОБПОУ "Курский Государственный Политехнический Колледж"</title>
+  </head>
+  <body class="box-border bg-bg_color font-main tracking-[0px]">
+    <!-- Section Main -->
+    <main id="sectionMain" class="relative">
+      <img
+        src="./src/img/bcg-main.webp"
+        alt="Bcg main page"
+        class="bgPageImage before: absolute z-[-1] h-full w-full object-cover object-center"
+      />
+      <header class="container mx-auto max-w-[1280px]">
+        <div
+          id="visionImpairedPanel"
+          class="hidden w-full bg-gray-100 p-4 outline outline-element_color transition duration-300"
+        >
+          <div
+            class="flex justify-center gap-16 md:gap-14 sm:flex-col sm:gap-5"
+          >
+            <!-- fontsize  -->
+            <div class="visImp_changeFontsize flex flex-col items-center gap-3">
+              <span class="text-center text-[18px] font-medium md:text-[16px]"
+                >Размер шрифта</span
+              >
+              <div class="flex items-center gap-5">
+                <!-- outline outline-black outline-1 rounded-md p-2 -->
+                <button
+                  id="visImp_changeFontsize_lv1"
+                  class="rounded-md bg-white p-2 text-[16px] font-semibold outline outline-1 outline-black md:text-[14px]"
+                >
+                  Аа
+                </button>
+                <button
+                  id="visImp_changeFontsize_lv2"
+                  class="rounded-md bg-white p-2 text-[20px] font-semibold outline outline-1 outline-black md:text-[18px]"
+                >
+                  Аа
+                </button>
+                <button
+                  id="visImp_changeFontsize_lv3"
+                  class="rounded-md bg-white p-2 text-[24px] font-semibold outline outline-1 outline-black md:text-[22px]"
+                >
+                  Аа
+                </button>
+              </div>
+            </div>
+            <!-- color theme  -->
+            <div
+              class="visImp_changeColorTheme flex flex-col items-center gap-3"
+            >
+              <span class="text-center text-[18px] font-medium md:text-[16px]"
+                >Цветовая схема</span
+              >
+              <div class="flex items-center gap-3 text-[20px] md:text-[18px]">
+                <button
+                  id="visImp_changeColorTheme_ver1"
+                  class="rounded-md bg-white p-2 font-semibold text-black outline outline-1 outline-black"
+                >
+                  B
+                </button>
+                <button
+                  id="visImp_changeColorTheme_ver2"
+                  class="rounded-md bg-black p-2 font-semibold text-white outline outline-1 outline-black"
+                >
+                  B
+                </button>
+                <button
+                  id="visImp_changeColorTheme_ver3"
+                  class="rounded-md bg-[#3B2716] p-2 font-semibold text-[#A9E44D] outline outline-1 outline-black"
+                >
+                  B
+                </button>
+              </div>
+            </div>
+            <!-- traking -->
+            <div class="visImp_changeTraking flex flex-col items-center gap-3">
+              <span class="text-center text-[18px] font-medium md:text-[16px]"
+                >Трекинг</span
+              >
+              <div class="flex items-center gap-3 text-[20px] md:text-[18px]">
+                <button
+                  id="visImp_changeTraking_trak1"
+                  class="flex rounded-md bg-white p-2 font-semibold text-black outline outline-1"
+                >
+                  <span>A</span> <span>B</span>
+                </button>
+                <button
+                  id="visImp_changeTraking_trak2"
+                  class="flex gap-2 rounded-md bg-white p-2 font-semibold text-black outline outline-1"
+                >
+                  <span>A</span> <span>B</span>
+                </button>
+                <button
+                  id="visImp_changeTraking_trak3"
+                  class="flex gap-3 rounded-md bg-white p-2 font-semibold text-black outline outline-1"
+                >
+                  <span>A</span> <span>B</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav
+          id="navDesktop"
+          class="container z-[3] mx-auto flex max-w-[1280px] select-none items-center justify-between py-[25px] md:pb-[50px] xxs:px-0"
+        >
+          <!-- Logo -->
+          <a href="./index.html" class="z-[2] flex-shrink-0 select-none"
+            ><img
+              class="logoKGPK h-16 xs:h-[52px] 2xxs:h-[48px]"
+              src="./src/img/kg-logo.png"
+              alt="logo KGPK"
+          /></a>
+          <div
+            class="flex items-center gap-5 2md:gap-2 xxs:flex-wrap xxs:justify-end"
+          >
+            <!-- Button version for the visually impaired -->
+            <div>
+              <button
+                id="visionImpairedBtn"
+                aria-label="Enable version for the visually impaired"
+                type="submit"
+                class="outlineElement flex items-center gap-2 rounded-xl bg-basic_color_3 p-3 2md:bg-transparent xs:p-[5px]"
+              >
+                <span
+                  class="visionImpairedEnable text-[18px] font-normal text-text_color_secondary 2md:hidden"
+                >
+                  Версия для слабовидящих
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="white"
+                  class="visionImpairedEnable h-9 xs:h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg>
+
+                <span
+                  class="visionImpairedDisable hidden text-[18px] font-normal text-text_color_secondary 2md:hidden"
+                >
+                  Стандартная версия
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="white"
+                  class="visionImpairedDisable hidden h-9 xs:h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Input-search -->
+            <div>
+              <button
+                id="searchBarBtn"
+                aria-label="Search open"
+                type="submit"
+                class="outlineElement flex items-center gap-2 rounded-xl bg-basic_color_3 p-3 2md:bg-transparent xs:p-[5px]"
+              >
+                <span
+                  class="text-[18px] font-normal text-text_color_secondary 2md:hidden"
+                  >Поиск</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="white"
+                  class="h-9 xs:h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              id="searchBarPanel"
+              class="outlineElement absolute left-0 top-0 z-[2] w-full translate-y-[-100%] bg-basic_color_3 p-7 transition duration-300"
+            >
+              <div
+                id="searchForm"
+                method="#"
+                action="#"
+                class="mx-auto flex max-w-[600px] items-center gap-4"
+              >
+                <style>
+                  ::-webkit-search-decoration,
+                  ::-webkit-search-cancel-button,
+                  ::-webkit-search-results-button,
+                  ::-webkit-search-results-decoration {
+                    -webkit-appearance: none;
+                  }
+                </style>
+                <input
+                  name="query"
+                  type="search"
+                  autocomplete="off"
+                  class="h-12 w-full rounded-md bg-transparent p-2 text-text_color_secondary outline outline-1 outline-element_color"
+                  placeholder="Поиск"
+                />
+                <button type="submit" id="searchBtn" class="outlineElement">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="white"
+                    class="h-9 xs:h-7"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-label="Search bar panel close"
+                  id="searchBarPanelClose"
+                  type="submit"
+                  class="focus:shadow-outline outlineElement z-[3] transform cursor-pointer select-none p-1 transition duration-500 ease-in-out focus:outline-none active:scale-x-110"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="white"
+                    class="h-10 w-10 xs:h-8 xs:w-8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Button Burger-menu -->
+            <div>
+              <button
+                id="hyperMenuBtn"
+                aria-label="Menu open"
+                type="submit"
+                class="outlineElement flex items-center gap-2 rounded-xl bg-basic_color_3 p-3 2md:bg-transparent xs:p-[5px]"
+              >
+                <span
+                  class="text-[18px] font-normal text-text_color_secondary 2md:hidden"
+                >
+                  Меню
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="white"
+                  class="h-9 xs:h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hyper menu -->
+        <nav
+          id="hyperNavMobile"
+          class="fixed left-0 top-0 z-[2] flex h-full w-full translate-y-[-100%] flex-col transition duration-300 will-change-transform"
+        >
+          <div
+            class="absolute left-0 top-0 z-[-1] h-full w-full bg-basic_color_3 bg-opacity-[95%] backdrop-blur-[6px]"
+          ></div>
+
+          <!-- Backgrounds for hyper menu -->
+          <img
+            id="bgMobile-navMobile"
+            src="src/img/hyperMenuBcgs/hyperMenu_navMobile.webp"
+            alt="hyperNavBcgMobile1"
+            class="bcgImage absolute z-[-2] h-full w-full object-cover object-center"
+          />
+          <img
+            id="bgMobile-infoAboutEduOrg"
+            src="src/img/hyperMenuBcgs/hyperMenu_infoAboutEduOrg.webp"
+            alt="hyperNavBcgMobile2"
+            class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
+          />
+          <img
+            id="bgMobile-toApplicant"
+            src="src/img/hyperMenuBcgs/hyperMenu_toApplicant.webp"
+            alt="hyperNavBcgMobile3"
+            class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
+          />
+          <img
+            id="bgMobile-forStudents"
+            src="src/img/hyperMenuBcgs/hyperMenu_forStudents.webp"
+            alt="hyperNavBcgMobile4"
+            class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
+          />
+          <img
+            id="bgMobile-contacts"
+            src="src/img/hyperMenuBcgs/hyperMenu_contacts.webp"
+            alt="hyperNavBcgMobile5"
+            class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
+          />
+          <img
+            id="bgMobile-associations"
+            src="src/img/hyperMenuBcgs/hyperMenu_associations.webp"
+            alt="hyperNavBcgMobile6"
+            class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
+          />
+
+          <!-- Inside header panel-->
+          <div
+            class="container z-[2] mx-auto flex select-none items-center justify-between bg-basic_color_3 px-[15px] py-[25px]"
+          >
+            <!-- Logo -->
+            <a href="./index.html" class="z-[3] flex-shrink-0 select-none"
+              ><img
+                class="logoKGPK h-16 xs:h-[52px] 2xxs:h-[48px]"
+                src="./src/img/kg-logo.png"
+                alt="logo KGPK"
+            /></a>
+
+            <!-- Button Close Burger-menu -->
+            <button
+              aria-label="Menu close"
+              id="hyperMenuBtn__close"
+              type="submit"
+              class="focus:shadow-outline z-[3] transform cursor-pointer select-none p-1 transition duration-500 ease-in-out focus:outline-none active:scale-x-110"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="white"
+                class="h-10 w-10 xs:h-8 xs:w-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Gradient overlay at the top -->
+          <div class="sticky top-0 z-[2]">
+            <div
+              class="absolute left-0 top-0 z-[2] h-14 w-full bg-gradient-to-b from-basic_color_3 to-transparent"
+            ></div>
+          </div>
+
+          <!-- Hyper Navigation container -->
+          <div
+            class="hyperNavMobile__container container relative flex-grow overflow-y-auto overflow-x-hidden pt-[5%] scrollbar-none"
+          >
+            <!-- Gradient overlay at the bottom -->
+            <div
+              class="fixed bottom-0 left-0 z-[2] h-14 w-full bg-gradient-to-t from-basic_color_3 to-transparent"
+            ></div>
+
+            <!-- Navigation -->
+            <nav id="navMobile" class="py-[50px]">
+              <ul
+                class="navMenuMobile flex max-w-[500px] select-none flex-col justify-center gap-8 text-fluid_menu_section font-semibold text-text_color_secondary"
+              >
+                <li class="navMenuMobile__btn">
+                  <a
+                    id="hyperMenuMobileBtn_infoAboutEduOrg"
+                    class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
+                    >Сведения об образовательной организации
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="navMenuMobile__btn">
+                  <a
+                    id="hyperMenuMobileBtn_toApplicant"
+                    class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
+                    >Абитуриенту
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="navMenuMobile__btn">
+                  <a
+                    id="hyperMenuMobileBtn_forStudents"
+                    class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
+                    >Студентам
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="navMenuMobile__btn">
+                  <a
+                    id="hyperMenuMobileBtn_contacts"
+                    class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
+                    >Контакты
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="navMenuMobile__btn">
+                  <a
+                    id="hyperMenuMobileBtn_associations"
+                    class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
+                    >Объединения и центры
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Content infoAboutEduOrg mobile -->
+            <div
+              id="mobileContent_infoAboutEduOrg"
+              class="mobileContent container hidden select-none py-[50px] text-[18px] text-text_color_secondary md:text-[16px]"
+            >
+              <a
+                id="btnToBack_infoAboutEduOrg"
+                class="outlineElement mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 font-extrabold text-black"
+                ><svg
+                  class="h-[30px] w-[30px]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12l4-4m-4 4 4 4"
+                  />
+                </svg>
+
+                НАЗАД</a
+              >
+              <span
+                class="before: my-5 block h-[1px] w-full bg-element_color"
+              ></span>
+              <ul class="flex max-w-[400px] flex-col gap-6">
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="./baseInfo.html" class="font-bold"
+                    >Основные сведения</a
+                  >
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Документы</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Образование</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Структура и органы управления</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Руководство и педагогический состав</a>
+                </li>
+
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Образовательные стандарты и требования</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Стипендии и меры поддержки обучающихся</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#"
+                    >Вакантные места для приема (перевода) обучающихся</a
+                  >
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Платные образовательные услуги</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#"
+                    >Организация питания в образовательной организации</a
+                  >
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Меню горячего питания</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#"
+                    >Материально-техническое обеспечение и оснащенность
+                    образовательного процесса</a
+                  >
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Международное сотрудничество</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Финансово-хозяйственная деятельность</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Доступная среда</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Content toApplicant mobile -->
+            <div
+              id="mobileContent_toApplicant"
+              class="mobileContent mx-auto hidden select-none gap-8 py-[50px] text-fluid_menu_section text-text_color_secondary"
+            >
+              <a
+                id="btnToBack_toApplicant"
+                class="outlineElement btnBackMenu mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 text-fluid_menu font-extrabold text-black"
+                ><svg
+                  class="h-[30px] w-[30px]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12l4-4m-4 4 4 4"
+                  />
+                </svg>
+
+                НАЗАД</a
+              >
+              <span
+                class="before: my-5 block h-[1px] w-full bg-element_color"
+              ></span>
+
+              <ul class="flex max-w-[550px] flex-col gap-8">
+                <li>
+                  <a
+                    href="#"
+                    id="feedback"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Обратная связь</a
+                  >
+                </li>
+                <li>
+                  <span
+                    id="admission_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Поступление
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-admission_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li><a href="#">Правила приёма</a></li>
+                      <li><a href="#">Документы для поступления</a></li>
+                      <li>
+                        <a href="#"
+                          >Перечень специальностей и профессий, по которым
+                          объявляется прием</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Условия приема на обучение по договорам об оказании
+                          платных образовательных услуг</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Информация о необходимости прохождения поступающими
+                          обязательного предварительного медицинского осмотра</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="career_guidance_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Профориентация
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-career_guidance_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#"
+                          >Профориентационный марафон "Моя будущая профессия -
+                          строитель"</a
+                        >
+                      </li>
+                      <li><a href="#">Обучение инвалидов и лиц с ОВЗ</a></li>
+                      <li><a href="#">Профориентационный проект #ПРОБУЙ</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="enrollment_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Зачисление
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-enrollment_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Приказы о зачислении студентов</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >График встречи с поступающими по зачислению</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Сведения о количестве поданных заявлений по каждой
+                          специальности и профессии с выделением форм получения
+                          образования</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="admission_committee_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Приёмная комиссия
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-admission_committee_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Адреса и телефоны приемной комиссии</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="entrance_exams_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Вступительные экзамены
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-entrance_exams_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#"
+                          >Расписание проведения вступительных испытаний</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Экзаменационные материалы для проведения
+                          вступительных испытаний по специальности 54.02.01
+                          Дизайн (по отраслям)</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Список абитуриентов, допущенных к вступительным
+                          испытаниям по специальности 20.02.04 Пожарная
+                          безопасность</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Результаты вступительных испытаний</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Правила подачи и рассмотрения апелляций по
+                          результатам вступительных испытаний</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Особенности проведения вступительных испытаний для
+                          инвалидов и лиц с ограниченными возможностями
+                          здоровья</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="dormitory_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Общежитие
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-dormitory_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#"
+                          >Информация о наличии общежития и количестве мест в
+                          общежитиях</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Количество вакантных мест в общежитии</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Список студентов на заселение в общежития</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Content forStudents mobile -->
+            <div
+              id="mobileContent_forStudents"
+              class="mobileContent mx-auto hidden select-none gap-8 py-[50px] text-fluid_menu_section text-text_color_secondary"
+            >
+              <a
+                id="btnToBack_forStudents"
+                class="outlineElement mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 text-fluid_menu font-extrabold text-black"
+                ><svg
+                  class="h-[30px] w-[30px]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12l4-4m-4 4 4 4"
+                  />
+                </svg>
+
+                НАЗАД</a
+              >
+              <span
+                class="before: my-5 block h-[1px] w-full bg-element_color"
+              ></span>
+
+              <ul class="flex max-w-[550px] flex-col gap-8">
+                <li>
+                  <a
+                    href="./studActivity.html"
+                    id="student_body_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Студенческий совет</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://m.vk.com/schoolcuratorkgpk"
+                    id="school_curator"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Школа куратора</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="schedule_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Расписание</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="order_certificate_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Заказать справку об обучении</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="employment_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Трудоустройство</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="elInfoEdu_environment"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Электронная информационно-образовательная среда</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="ask_director"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Задай вопрос директору</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="kgpk_news"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Новости КГПК</a
+                  >
+                </li>
+                <li>
+                  <span
+                    id="demoExam_worldSkills"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Демонстрационный экзамен по стандартам Ворлдскиллс Россия
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-demoExam_worldSkills hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Компетенция: Парикмахерское искусство</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Компетенция: Программные решения для бизнеса</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Компетенция: Хлебопечение</a>
+                      </li>
+                      <li>
+                        <a href="#">Архив</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="useful_info_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Полезная информация
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-useful_info_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Фестиваль "Цифровое искусство - 2023"</a>
+                      </li>
+                      <li>
+                        <a href="https://rkc.kg-college.ru/"
+                          >Профессионалы | Всероссийское чемпионатное движение
+                          по профессиональному мастерству</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Электронный ресурс «PROFобразование»</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Образовательное кредитование: пособие для студентов
+                          СПО</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Горячая линия по приему, профориентации, получению
+                          профессионального образования и профессионального
+                          обучения, последующему трудоустройству лиц с
+                          инвалидностью и ОВЗ
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Горячая линия в системе СПО на базе ФГБОУ ДПО ИРПО
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Оценка качества образовательной деятельности
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Проектный офис по реализации проектов в рамках
+                          регионального проекта "Эффективный регион"
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Практическая подготовка </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Информация о распределении образовательными
+                          организациями, находящимися в ведении Минпросвещения
+                          России, контрольных цифр приема и мест, выделенных на
+                          целевое обучение, по всем реализуемым УГСН на
+                          2023-2024 учебный год
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Всероссийский Урок трудовой доблести «Трудом
+                          прославлявшие Родину»</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Базовая профессиональная образовательная организация
+                          инклюзивного образования</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Инклюзивное образование</a>
+                      </li>
+                      <li>
+                        <a href="#">Психолого-педагогическое сопровождение</a>
+                      </li>
+                      <li>
+                        <a href="#">ГОСУСЛУГИ</a>
+                      </li>
+                      <li>
+                        <a href="https://rpgu.rkursk.ru/"
+                          >Курская область ГОСУСЛУГИ</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Комитет образования и науки Курской области</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://edu.gov.ru/"
+                          >Министерство просвещения Российской Федерации</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Образование России</a>
+                      </li>
+                      <li>
+                        <a href="#">Антикризис - время учиться!</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Единое окно доступа к образовательным ресурсам</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.edu.ru/"
+                          >Российское образование. Федеральный портал</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://trudvsem.ru/"
+                          >Работа России. Общественная база вакансий</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >ВПРАВЕ.РФ. Государственная платформа бесплатной
+                          юридической помощи Минюста России</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Сборник стихов собственного сочинения студентов</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Образовательный кредит</a>
+                      </li>
+                      <li>
+                        <a href="#">Кредит на образование с господдержкой</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Профилактика правонарушений несовершеннолетних</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Предупреждение краж и мошенничеств, совершаемых с
+                          помощью информационно-коммуникационных технологий</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Результаты независимой оценки качества оказания услуг
+                          организациями</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Профилактика употребления курительных смесей</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Противодействие коррупции</a>
+                      </li>
+                      <li>
+                        <a href="#">Безопасный Интернет. Советы родителям</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Фотовыставка «Герои с вечно русским сердцем»</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Всероссийский Сводный обзор:
+                          «Общественно-государственное партнерство в субъектах
+                          РФ 2021»</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Содействие гражданам в случае международного
+                          похищения детей
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Сообщи, где торгуют смертью</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Официальное обращение ОИА "Новости России"</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Всероссийская акция «Стоп ВИЧ/СПИД»</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Формирование Всероссийской интернет-площадки "Органы
+                          власти субъектов РФ – навстречу детям!"</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Памятка о необходимости соблюдения ПДД при перевозке
+                          несовершеннолетних, а также разъяснения детям основ
+                          безопасного поведения на дорогах</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Профилактика туберкулеза</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Уголовная ответственность за преступления, связанные
+                          с наркотиками</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Информационный ролик</a>
+                      </li>
+                      <li>
+                        <a href="#">Стипендии и меры поддержки обучающихся</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Советы родителям по безопасности детей в сети
+                          Интернет</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Правовая ответственность за осуществление
+                          эктремистской деятельности</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Экстренные службы психологической помощи</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Методические рекомендации по заполнению формы
+                          сообщения о наличии на страницах сайтов в сети
+                          Интернет противоправной информации
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Content contacts mobile -->
+            <div
+              id="mobileContent_contacts"
+              class="mobileContent mx-auto hidden select-none gap-8 py-[50px] text-fluid_menu_section text-text_color_secondary"
+            >
+              <a
+                id="btnToBack_contacts"
+                class="outlineElement mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 text-fluid_menu font-extrabold text-black"
+                ><svg
+                  class="h-[30px] w-[30px]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12l4-4m-4 4 4 4"
+                  />
+                </svg>
+
+                НАЗАД</a
+              >
+              <span
+                class="before: my-5 block h-[1px] w-full bg-element_color"
+              ></span>
+
+              <ul class="flex max-w-[550px] flex-col gap-8">
+                <li>
+                  <a
+                    id="academic_buildings_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Учебные корпуса</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="student_dormitories_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Студенческие общежития</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Content associations mobile -->
+            <div
+              id="mobileContent_associations"
+              class="mobileContent mx-auto hidden select-none gap-8 py-[50px] text-fluid_menu_section text-text_color_secondary"
+            >
+              <a
+                id="btnToBack_associations"
+                class="outlineElement mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 text-fluid_menu font-extrabold text-black"
+                ><svg
+                  class="h-[30px] w-[30px]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12l4-4m-4 4 4 4"
+                  />
+                </svg>
+
+                НАЗАД</a
+              >
+              <span
+                class="before: my-5 block h-[1px] w-full bg-element_color"
+              ></span>
+
+              <ul class="flex max-w-[550px] flex-col gap-8">
+                <li>
+                  <a
+                    id="board_of_trustees_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Попечительский совет
+                  </a>
+                </li>
+                <li>
+                  <a
+                    id="eco_park"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Центр дополнительного образования детей и взрослых
+                    «ЭКО-ПАРК»
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://abilympics.kg-college.ru/"
+                    id="abilimpix"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Региональный центр развития движения «Абилимпикс»
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://rumc.kg-college.ru/"
+                    id="rumc_spo"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >РУМЦ СПО
+                  </a>
+                </li>
+                <li>
+                  <span
+                    id="regional_resource_center_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Региональный ресурсный центр
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-regional_resource_center_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li><a href="#">Деятельность Ресурсного центра</a></li>
+                      <li><a href="#">Нормативные документы</a></li>
+                      <li>
+                        <a href="#">О создании Ресурсного центра</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="volunteer_club_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Клуб Доброволец
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-volunteer_club_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Руководство клуба</a>
+                      </li>
+                      <li><a href="#">Федеральный закон</a></li>
+                      <li><a href="#">Герб и гимн клуба</a></li>
+                      <li><a href="#">Музей клуба</a></li>
+                      <li><a href="#">Основные направления</a></li>
+                      <li><a href="#">Общее положение</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="sports_club_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Спортклуб "КГПК"
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-sports_club_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Официальная группа VK</a>
+                      </li>
+                      <li>
+                        <a href="#">Документы</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="multifunctional_center_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Многофункциональный центр прикладных квалификаций
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-multifunctional_center_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">О создании МЦПК</a>
+                      </li>
+                      <li><a href="#">Стоимость обучения</a></li>
+                      <li><a href="#">Нормативные документы</a></li>
+                      <li><a href="#">Итоги деятельности</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div
+        class="container grid max-w-[1280px] grid-cols-2 items-center py-[100px] text-text_color_secondary 2md:grid-cols-1 2md:text-center"
+      >
+        <div class="outlineElement mx-auto">
+          <h1 class="main__title text-center text-fluid_title font-bold">
+            Курский Государственный Политехнический Колледж
+          </h1>
+          <p
+            class="main__subtitle select-none pl-[100px] text-center text-fluid_subtitle font-light italic lg:pl-[50px] 2md:p-0 2md:pb-5 2md:pt-3 md:p-0 md:pb-5 md:pt-3"
+          >
+            наш диплом - гарантия вашего успеха
+          </p>
+        </div>
+
+        <img
+          src="./src/img/polaroids.webp"
+          alt="polaroids"
+          class="main__imgPolaroids block max-h-[550px] 2md:mx-auto"
+        />
+      </div>
+    </main>
+
+    <!-- Section About -->
+
+    <section id="sectionAbout" class="py-[100px]">
+      <div
+        class="container relative grid max-w-[1280px] grid-cols-2 items-center 2md:grid-cols-1"
+      >
+        <div class="pr-[28px] 2md:p-0">
+          <h1
+            class="text-fluid_title font-bold tracking-[6px] text-text_color_primary"
+          >
+            О колледже
+          </h1>
+          <span
+            class="index_decoLine deco after: mt-2 block h-[2px] max-w-[600px] bg-basic_color_deco1"
+          ></span>
+          <span
+            class="index_decoLine deco after: mt-2 block h-[2px] max-w-[340px] bg-basic_color_deco1"
+          ></span>
+          <p
+            class="outlineElement pt-[50px] text-fluid font-semibold italic leading-normal text-text_color_primary"
+          >
+            Колледж - это многопрофильное, с устоявшимися традициями, учебное
+            заведение.
+          </p>
+          <br />
+          <p
+            class="outlineElement text-fluid font-medium leading-normal text-text_color_primary"
+          >
+            Специальности, по которым ведется обучение, входят в перечень
+            перспективных профессий, а часть из них вошла, в соответствии с
+            приказом Министерства труда и социальной зашиты Российской
+            Федерации, в список 50 наиболее востребованных, новых и
+            перспективных профессий на рынке труда.
+          </p>
+          <span
+            class="index_decoCircle deco before: absolute -bottom-[40px] -left-[100px] -z-[1] block h-[450px] w-[450px] rounded-full bg-basic_color_deco2 opacity-5 xs:h-[300px] xs:w-[300px]"
+          ></span>
+        </div>
+        <img
+          loading="lazy"
+          src="./src/img/aboutPhoto.webp"
+          alt="about photo"
+          class="mx-auto max-h-[400px] 2md:pt-[50px]"
+        />
+      </div>
+    </section>
+
+    <!-- Setcion Student Activities -->
+
+    <section
+      id="setcionStudentActivities"
+      class="relative z-0 overflow-hidden bg-gradient-to-b from-basic_color_2 to-basic_color_1 pt-[50px]"
+    >
+      <div class="container relative max-w-[1280px]">
+        <!-- Deco circles -->
+
+        <span
+          class="before: deco absolute -right-[100px] -top-[100px] -z-[1] block h-[400px] w-[400px] rounded-full bg-basic_color_deco3 bg-opacity-75 xs:h-[300px] xs:w-[300px] 2xxs:h-[200px] 2xxs:w-[200px]"
+        ></span>
+
+        <span
+          class="before: deco absolute -bottom-[200px] -left-[90px] -z-[1] block h-[700px] w-[700px] rounded-full bg-basic_color_deco3 bg-opacity-20 xs:h-[500px] xs:w-[500px] 2xxs:h-[200px] 2xxs:w-[200px]"
+        ></span>
+
+        <!-- Content -->
+
+        <h1
+          class="text-fluid_title font-bold tracking-[6px] text-text_color_secondary"
+        >
+          Студенческая деятельность
+        </h1>
+        <p
+          class="outlineElement pt-5 text-fluid font-medium leading-[145%] text-text_color_secondary"
+        >
+          Студенческий совет играет важную роль в формировании культуры КГПК.
+          Здесь создается единое сообщество единомышленников — большая,
+          активная, творческая, сильная и крепкая команда ярких личностей
+          колледжа, которая представляет интересы всего его студенчества,
+          поддерживает инициативы и идеи студентов, помогает в сложных
+          ситуациях, а также делает жизнь колледжа ярче!
+        </p>
+
+        <!-- Cards -->
+
+        <div
+          class="mx-auto grid grid-cols-3 items-center py-6 lg:max-w-[400px] lg:grid-cols-1 lg:gap-7"
+        >
+          <!-- Student body card -->
+
+          <div
+            class="outlineElement relative h-[400px] overflow-hidden rounded-[70px] bg-bg_studentBody bg-cover bg-center shadow-shadowCards xs:h-[300px] xxs:rounded-[50px]"
+          >
+            <div class="absolute inset-0 bg-white bg-opacity-50"></div>
+            <div
+              class="outlineElement group absolute bottom-0 left-0 w-full rounded-[70px] bg-basic_color_3 p-5 shadow-shadowCards_element xxs:rounded-[50px]"
+            >
+              <h1
+                class="text-center text-fluid_card_studActiv_title font-bold uppercase text-text_color_secondary"
+              >
+                Студенческий <br />
+                совет
+              </h1>
+              <div class="hidden pt-4 group-hover:block group-active:block">
+                <div
+                  class="m-auto flex flex-col items-center gap-6 text-center"
+                >
+                  <p
+                    class="text-fluid_card_studActiv font-normal text-text_color_secondary"
+                  >
+                    Орган студенческого самоуправления, который представляет и
+                    защищает интересы наших студентов.
+                  </p>
+                  <a
+                    target="_blank"
+                    aria-label="VK Student body"
+                    href="https://vk.com/public220057247"
+                    class=""
+                  >
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 101 100"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="iconLink"
+                    >
+                      <g clip-path="url(#clip0_2_2)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.52944 7.02944C0.5 14.0589 0.5 25.3726 0.5 48V52C0.5 74.6274 0.5 85.9411 7.52944 92.9706C14.5589 100 25.8726 100 48.5 100H52.5C75.1274 100 86.4411 100 93.4706 92.9706C100.5 85.9411 100.5 74.6274 100.5 52V48C100.5 25.3726 100.5 14.0589 93.4706 7.02944C86.4411 0 75.1274 0 52.5 0H48.5C25.8726 0 14.5589 0 7.52944 7.02944ZM17.3752 30.4169C17.9168 56.4169 30.9167 72.0418 53.7084 72.0418H55.0003V57.1668C63.3753 58.0001 69.7082 64.1252 72.2498 72.0418H84.0835C80.8335 60.2085 72.2914 53.6668 66.9581 51.1668C72.2914 48.0835 79.7915 40.5835 81.5831 30.4169H70.8328C68.4995 38.6669 61.5836 46.1668 55.0003 46.8751V30.4169H44.2499V59.2501C37.5833 57.5835 29.1668 49.5002 28.7918 30.4169H17.3752Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2_2">
+                          <rect
+                            width="100"
+                            height="100"
+                            fill="white"
+                            transform="translate(0.5)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deco -->
+
+          <div class="setcionStudentActivities_deco mx-auto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="fill"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="h-[100px] w-[100px] xs:h-[80px] xs:w-[80px]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"
+              />
+            </svg>
+          </div>
+
+          <!-- Traektoria card -->
+
+          <div
+            class="outlineElement relative h-[400px] overflow-hidden rounded-[70px] bg-bg_traektoria bg-cover bg-center shadow-shadowCards xs:h-[300px] xxs:rounded-[50px]"
+          >
+            <div class="absolute inset-0 bg-white bg-opacity-50"></div>
+            <div
+              class="outlineElement group absolute bottom-0 left-0 w-full rounded-[70px] bg-basic_color_3 p-5 shadow-shadowCards_element xxs:rounded-[50px]"
+            >
+              <h1
+                class="text-center text-fluid_card_studActiv_title font-bold uppercase text-text_color_secondary"
+              >
+                Пресс-центр <br />
+                Траектория
+              </h1>
+              <div class="hidden pt-4 group-hover:block group-active:block">
+                <div
+                  class="m-auto flex flex-col items-center gap-6 text-center"
+                >
+                  <p
+                    class="text-fluid_card_studActiv font-normal text-text_color_secondary"
+                  >
+                    Студенческий медиацентр, направленный на информирование
+                    целевой аудитории путем СМИ.
+                  </p>
+                  <a
+                    target="_blank"
+                    aria-label="VK Traektoria"
+                    href="https://vk.com/traektoriakgpk"
+                    class=""
+                  >
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 101 100"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="iconLink"
+                    >
+                      <g clip-path="url(#clip0_2_2)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.52944 7.02944C0.5 14.0589 0.5 25.3726 0.5 48V52C0.5 74.6274 0.5 85.9411 7.52944 92.9706C14.5589 100 25.8726 100 48.5 100H52.5C75.1274 100 86.4411 100 93.4706 92.9706C100.5 85.9411 100.5 74.6274 100.5 52V48C100.5 25.3726 100.5 14.0589 93.4706 7.02944C86.4411 0 75.1274 0 52.5 0H48.5C25.8726 0 14.5589 0 7.52944 7.02944ZM17.3752 30.4169C17.9168 56.4169 30.9167 72.0418 53.7084 72.0418H55.0003V57.1668C63.3753 58.0001 69.7082 64.1252 72.2498 72.0418H84.0835C80.8335 60.2085 72.2914 53.6668 66.9581 51.1668C72.2914 48.0835 79.7915 40.5835 81.5831 30.4169H70.8328C68.4995 38.6669 61.5836 46.1668 55.0003 46.8751V30.4169H44.2499V59.2501C37.5833 57.5835 29.1668 49.5002 28.7918 30.4169H17.3752Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2_2">
+                          <rect
+                            width="100"
+                            height="100"
+                            fill="white"
+                            transform="translate(0.5)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Welcome -->
+
+    <section
+      id="setcionWelcome"
+      class="bg-gradient-to-b from-basic_color_1 to-bg_color pt-[50px]"
+    >
+      <div class="container max-w-[1280px]">
+        <h1
+          class="text-center text-fluid_title font-bold tracking-[6px] text-text_color_secondary"
+        >
+          Мы ждем именно <span class="font-extrabold italic">тебя</span>!
+        </h1>
+
+        <!-- Swiper -->
+        <div
+          class="select-none py-[50px]"
+          style="
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #fff;
+          "
+        >
+          <div class="swiper mySwiper outlineElement max-h-[620px] max-w-full">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide flex items-center justify-center text-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./src/img/Slides/Slide1.jpg"
+                  alt="Slide 1"
+                  class="block"
+                />
+              </div>
+              <div
+                class="swiper-slide flex items-center justify-center text-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./src/img/Slides/Slide2.jpg"
+                  alt="Slide 2"
+                  class="block"
+                />
+              </div>
+              <div
+                class="swiper-slide flex items-center justify-center text-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./src/img/Slides/Slide3.jpg"
+                  alt="Slide 3"
+                  class="block"
+                />
+              </div>
+              <div
+                class="swiper-slide flex items-center justify-center text-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./src/img/Slides/Slide4.jpg"
+                  alt="Slide 4"
+                  class="block"
+                />
+              </div>
+              <div
+                class="swiper-slide flex items-center justify-center text-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./src/img/Slides/Slide5.jpg"
+                  alt="Slide 5"
+                  class="block"
+                />
+              </div>
+              <div
+                class="swiper-slide flex items-center justify-center text-center"
+              >
+                <img
+                  src="./src/img/Slides/Slide6.jpg"
+                  alt="Slide 6"
+                  class="block"
+                />
+              </div>
+              <div
+                class="swiper-slide flex items-center justify-center text-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./src/img/Slides/Slide7.jpg"
+                  alt="Slide 7"
+                  class="block"
+                />
+              </div>
+              <div
+                class="swiper-slide flex items-center justify-center text-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./src/img/Slides/Slide8.jpg"
+                  alt="Slide 8"
+                  class="block"
+                />
+              </div>
+              <div
+                class="swiper-slide flex items-center justify-center text-center"
+              >
+                <img
+                  loading="lazy"
+                  src="./src/img/Slides/Slide9.jpg"
+                  alt="Slide 9"
+                  class="block"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <button
+          aria-label="More info"
+          id="moreInfo_btn"
+          class="outlineElement relative block w-full bg-basic_color_3 shadow-xl"
+        >
+          <h1
+            class="p-4 text-center text-fluid_card_title font-medium uppercase text-text_color_secondary"
+          >
+            Полезная информация
+          </h1>
+        </button>
+        <div
+          id="moreInfo_dropdown"
+          class="outlineElement hidden h-[450px] w-full overflow-y-auto bg-basic_color_3 scrollbar scrollbar-track-transparent scrollbar-thumb-element_color"
+        >
+          <ul class="mx-auto flex max-w-[1000px] flex-col gap-5 p-10">
+            <li
+              class="w-full bg-white p-5 text-center text-[18px] xs:text-[16px] xxs:text-[14px]"
+            >
+              <a
+                target="_blank"
+                href="https://www.kg-college.ru/files/index/chto_nuzhno_znat_o_grippe.pdf"
+                >Что нужно знать о гриппе?</a
+              >
+            </li>
+
+            <li
+              class="w-full bg-white p-5 text-center text-[18px] xs:text-[16px] xxs:text-[14px]"
+            >
+              <a target="_blank" href="https://disk.yandex.ru/d/0-pyZj3_JfCorg"
+                >Профилактика гриппа и ОРВИ</a
+              >
+            </li>
+
+            <li class="w-full">
+              <script src="https://pos.gosuslugi.ru/bin/script.min.js"></script>
+              <style>
+                #js-show-iframe-wrapper {
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  min-width: 293px;
+                  max-width: 100%;
+                  background: linear-gradient(
+                    138.4deg,
+                    #38bafe 26.49%,
+                    #2d73bc 79.45%
+                  );
+                  color: #fff;
+                  cursor: pointer;
+                }
+                #js-show-iframe-wrapper .pos-banner-fluid * {
+                  box-sizing: border-box;
+                }
+                #js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2 {
+                  display: block;
+                  width: 195px;
+                  min-height: 56px;
+                  font-size: 18px;
+                  line-height: 24px;
+                  cursor: pointer;
+                  background: #0d4cd3;
+                  color: #fff;
+                  border: none;
+                  border-radius: 8px;
+                  outline: 0;
+                }
+                #js-show-iframe-wrapper
+                  .pos-banner-fluid
+                  .pos-banner-btn_2:hover {
+                  background: #1d5deb;
+                }
+                #js-show-iframe-wrapper
+                  .pos-banner-fluid
+                  .pos-banner-btn_2:focus {
+                  background: #2a63ad;
+                }
+                #js-show-iframe-wrapper
+                  .pos-banner-fluid
+                  .pos-banner-btn_2:active {
+                  background: #2a63ad;
+                }
+                @-webkit-keyframes fadeInFromNone {
+                  0% {
+                    display: none;
+                    opacity: 0;
+                  }
+                  1% {
+                    display: block;
+                    opacity: 0;
+                  }
+                  100% {
+                    display: block;
+                    opacity: 1;
+                  }
+                }
+                @keyframes fadeInFromNone {
+                  0% {
+                    display: none;
+                    opacity: 0;
+                  }
+                  1% {
+                    display: block;
+                    opacity: 0;
+                  }
+                  100% {
+                    display: block;
+                    opacity: 1;
+                  }
+                }
+                @font-face {
+                  font-family: LatoWebLight;
+                  src:
+                    url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff2)
+                      format("woff2"),
+                    url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff)
+                      format("woff"),
+                    url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.ttf)
+                      format("truetype");
+                  font-style: normal;
+                  font-weight: 400;
+                  text-rendering: optimizeLegibility;
+                }
+                @font-face {
+                  font-family: LatoWeb;
+                  src:
+                    url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff2)
+                      format("woff2"),
+                    url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff)
+                      format("woff"),
+                    url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.ttf)
+                      format("truetype");
+                  font-style: normal;
+                  font-weight: 400;
+                  text-rendering: optimizeLegibility;
+                }
+                @font-face {
+                  font-family: LatoWebBold;
+                  src:
+                    url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff2)
+                      format("woff2"),
+                    url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff)
+                      format("woff"),
+                    url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.ttf)
+                      format("truetype");
+                  font-style: normal;
+                  font-weight: 400;
+                  text-rendering: optimizeLegibility;
+                }
+              </style>
+
+              <style>
+                #js-show-iframe-wrapper .bf-2 {
+                  position: relative;
+                  display: grid;
+                  grid-template-columns: var(
+                    --pos-banner-fluid-2__grid-template-columns
+                  );
+                  grid-template-rows: var(
+                    --pos-banner-fluid-2__grid-template-rows
+                  );
+                  width: 100%;
+                  max-width: 1060px;
+                  font-family: LatoWeb, sans-serif;
+                  box-sizing: border-box;
+                }
+                #js-show-iframe-wrapper .bf-2__decor {
+                  grid-column: var(--pos-banner-fluid-2__decor-grid-column);
+                  grid-row: var(--pos-banner-fluid-2__decor-grid-row);
+                  padding: var(--pos-banner-fluid-2__decor-padding);
+                  background: var(--pos-banner-fluid-2__bg-url)
+                    var(--pos-banner-fluid-2__bg-position) no-repeat;
+                  background-size: var(--pos-banner-fluid-2__bg-size);
+                }
+                #js-show-iframe-wrapper .bf-2__logo-wrap {
+                  position: absolute;
+                  top: var(--pos-banner-fluid-2__logo-wrap-top);
+                  bottom: var(--pos-banner-fluid-2__logo-wrap-bottom);
+                  right: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  padding: var(--pos-banner-fluid-2__logo-wrap-padding);
+                  background: #2d73bc;
+                  border-radius: var(
+                    --pos-banner-fluid-2__logo-wrap-border-radius
+                  );
+                }
+                #js-show-iframe-wrapper .bf-2__logo {
+                  width: 128px;
+                }
+                #js-show-iframe-wrapper .bf-2__slogan {
+                  font-family: LatoWebBold, sans-serif;
+                  font-size: var(--pos-banner-fluid-2__slogan-font-size);
+                  line-height: var(--pos-banner-fluid-2__slogan-line-height);
+                }
+                #js-show-iframe-wrapper .bf-2__content {
+                  padding: var(--pos-banner-fluid-2__content-padding);
+                }
+                #js-show-iframe-wrapper .bf-2__description {
+                  display: flex;
+                  flex-direction: column;
+                  margin-bottom: 24px;
+                }
+                #js-show-iframe-wrapper .bf-2__text {
+                  margin-bottom: 12px;
+                  font-size: 24px;
+                  line-height: 32px;
+                  font-family: LatoWebBold, sans-serif;
+                }
+                #js-show-iframe-wrapper .bf-2__text_small {
+                  margin-bottom: 0;
+                  font-size: 16px;
+                  line-height: 24px;
+                  font-family: LatoWeb, sans-serif;
+                }
+                #js-show-iframe-wrapper .bf-2__btn-wrap {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+              </style>
+              <div id="js-show-iframe-wrapper">
+                <div class="pos-banner-fluid bf-2">
+                  <div class="bf-2__decor">
+                    <div class="bf-2__logo-wrap">
+                      <img
+                        class="bf-2__logo"
+                        src="https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo.svg"
+                        alt="Госуслуги"
+                      />
+                      <div class="bf-2__slogan">Жалобы на всё</div>
+                    </div>
+                  </div>
+                  <div class="bf-2__content">
+                    <div class="bf-2__description">
+                      <span class="bf-2__text">
+                        Не убран мусор, яма на дороге, не горит фонарь?
+                        <!--            Не убран мусор, яма на дороге, не горит фонарь?-->
+                      </span>
+                      <span
+                        class="pos-banner-fluid__text pos-banner-fluid__text_small"
+                      >
+                        Столкнулись с проблемой&nbsp;— сообщите о ней!
+                        <!--          Столкнулись с проблемой&nbsp;— сообщите о ней!-->
+                      </span>
+                    </div>
+
+                    <div class="bf-2__btn-wrap">
+                      <!-- pos-banner-btn_2 не удалять; другие классы не добавлять -->
+                      <button class="pos-banner-btn_2" type="button">
+                        Подать жалобу
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                "use strict";
+                var root = document.documentElement,
+                  banner = document.getElementById("js-show-iframe-wrapper");
+                function displayWindowSize() {
+                  var o = banner.offsetWidth;
+                  o <= 405 &&
+                    (root.style.setProperty(
+                      "--pos-banner-fluid-2__grid-template-columns",
+                      "100%",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__grid-template-rows",
+                      "310px auto",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__decor-grid-column",
+                      "initial",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__decor-grid-row",
+                      "initial",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__decor-padding",
+                      "30px 30px 0 30px",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__content-padding",
+                      "0 30px 30px 30px",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__bg-url",
+                      "url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__bg-position",
+                      "calc(10% + 64px) calc(100% - 20px)",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__bg-size",
+                      "cover",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__slogan-font-size",
+                      "20px",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__slogan-line-height",
+                      "32px",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__logo-wrap-padding",
+                      "20px 30px 30px 40px",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__logo-wrap-top",
+                      "0",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__logo-wrap-bottom",
+                      "initial",
+                    ),
+                    root.style.setProperty(
+                      "--pos-banner-fluid-2__logo-wrap-border-radius",
+                      "0 0 0 80px",
+                    )),
+                    o > 405 &&
+                      o <= 500 &&
+                      (root.style.setProperty(
+                        "--pos-banner-fluid-2__grid-template-columns",
+                        "100%",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__grid-template-rows",
+                        "310px auto",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-grid-column",
+                        "initial",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-grid-row",
+                        "initial",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-padding",
+                        "30px 30px 0 30px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__content-padding",
+                        "0 30px 30px 30px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-url",
+                        "url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-position",
+                        "calc(10% + 64px) calc(100% - 20px)",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-size",
+                        "cover",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__slogan-font-size",
+                        "24px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__slogan-line-height",
+                        "32px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-padding",
+                        "30px 50px 30px 70px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-top",
+                        "0",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-bottom",
+                        "initial",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-border-radius",
+                        "0 0 0 80px",
+                      )),
+                    o > 500 &&
+                      o <= 585 &&
+                      (root.style.setProperty(
+                        "--pos-banner-fluid-2__grid-template-columns",
+                        "min-content 1fr",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__grid-template-rows",
+                        "100%",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-grid-column",
+                        "2",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-grid-row",
+                        "1",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-padding",
+                        "30px 30px 30px 0",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__content-padding",
+                        "30px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-url",
+                        "url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-position",
+                        "0% calc(100% - 70px)",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-size",
+                        "cover",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__slogan-font-size",
+                        "24px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__slogan-line-height",
+                        "32px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-padding",
+                        "30px 30px 24px 40px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-top",
+                        "initial",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-bottom",
+                        "0",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-border-radius",
+                        "80px 0 0 0",
+                      )),
+                    o > 585 &&
+                      o <= 800 &&
+                      (root.style.setProperty(
+                        "--pos-banner-fluid-2__grid-template-columns",
+                        "min-content 1fr",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__grid-template-rows",
+                        "100%",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-grid-column",
+                        "2",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-grid-row",
+                        "1",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-padding",
+                        "30px 30px 30px 0",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__content-padding",
+                        "30px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-url",
+                        "url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-position",
+                        "0% calc(100% - 6px)",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-size",
+                        "cover",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__slogan-font-size",
+                        "24px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__slogan-line-height",
+                        "32px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-padding",
+                        "30px 30px 24px 40px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-top",
+                        "initial",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-bottom",
+                        "0",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-border-radius",
+                        "80px 0 0 0",
+                      )),
+                    o > 800 &&
+                      o <= 1020 &&
+                      (root.style.setProperty(
+                        "--pos-banner-fluid-2__grid-template-columns",
+                        "min-content 1fr",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__grid-template-rows",
+                        "100%",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-grid-column",
+                        "2",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-grid-row",
+                        "1",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-padding",
+                        "30px 30px 30px 0",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__content-padding",
+                        "30px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-url",
+                        "url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2.svg')",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-position",
+                        "0% center",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-size",
+                        "cover",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__slogan-font-size",
+                        "24px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__slogan-line-height",
+                        "32px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-padding",
+                        "30px 30px 24px 40px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-top",
+                        "initial",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-bottom",
+                        "0",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-border-radius",
+                        "80px 0 0 0",
+                      )),
+                    o > 1020 &&
+                      (root.style.setProperty(
+                        "--pos-banner-fluid-2__grid-template-columns",
+                        "min-content 1fr",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__grid-template-rows",
+                        "100%",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-grid-column",
+                        "2",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-grid-row",
+                        "1",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__decor-padding",
+                        "30px 30px 30px 0",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__content-padding",
+                        "30px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-url",
+                        "url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2.svg')",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-position",
+                        "0% center",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__bg-size",
+                        "cover",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__slogan-font-size",
+                        "24px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__slogan-line-height",
+                        "32px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-padding",
+                        "30px 30px 24px 40px",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-top",
+                        "initial",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-bottom",
+                        "0",
+                      ),
+                      root.style.setProperty(
+                        "--pos-banner-fluid-2__logo-wrap-border-radius",
+                        "80px 0 0 0",
+                      ));
+                }
+                displayWindowSize();
+                var resizeListener = window.addEventListener(
+                  "resize",
+                  displayWindowSize,
+                );
+                window.addEventListener("beforeunload", function (event) {
+                  window.removeEventListener("resize", resizeListener);
+                });
+              </script>
+              <script>
+                Widget("https://pos.gosuslugi.ru/form", 265552);
+              </script>
+            </li>
+
+            <li class="w-full">
+              <a
+                target="_blank"
+                href="https://xn--80aapampemcchfmo7a3c9ehj.xn--p1ai/projects"
+              >
+                <img
+                  loading="lazy"
+                  src="https://www.kg-college.ru/images/naciban.png"
+                  alt="Banner 02"
+                  class="w-full"
+                />
+              </a>
+            </li>
+
+            <li class="w-full">
+              <a
+                target="_blank"
+                href="https://www.kg-college.ru/poleznye-ssylki/flagmany-obrazovanija"
+              >
+                <img
+                  loading="lazy"
+                  src="https://www.kg-college.ru/files/index/flagmany_obrazovanija.jpg"
+                  alt="Banner 03"
+                  class="w-full"
+                />
+              </a>
+            </li>
+
+            <li class="w-full">
+              <a target="_blank" href="https://nk.onf.ru/surveys/792">
+                <img
+                  loading="lazy"
+                  src="https://www.kg-college.ru/files/index/kachestvo_obrazovanija.jpg"
+                  alt="Banner 04"
+                  class="w-full"
+                />
+              </a>
+            </li>
+
+            <li class="w-full">
+              <a target="_blank" href="https://razgovor.edsoo.ru/">
+                <img
+                  loading="lazy"
+                  src="https://www.kg-college.ru/files/index/razgovory_o_vazhnom.png"
+                  alt="Banner 05"
+                  class="w-full"
+                />
+              </a>
+            </li>
+
+            <li class="w-full">
+              <a target="_blank" href="https://xn--90aivcdt6dxbc.xn--p1ai/">
+                <img
+                  loading="lazy"
+                  src="https://www.kg-college.ru/files/index/objasnjaem_rf.png"
+                  alt="Banner 06"
+                  class="w-full"
+                />
+              </a>
+            </li>
+
+            <li class="w-full">
+              <a
+                target="_blank"
+                href="https://www.kg-college.ru/poleznye-ssylki/cifrovye-professii"
+              >
+                <img
+                  loading="lazy"
+                  src="https://www.kg-college.ru/files/index/cifrovye_professii.jpg"
+                  alt="Banner 07"
+                  class="w-full"
+                />
+              </a>
+            </li>
+
+            <li
+              class="w-full bg-white p-5 text-center text-[18px] xs:text-[16px] xxs:text-[14px]"
+            >
+              <a href="#"
+                ><span class="font-semibold">Внимание, родители!</span> В целях
+                обеспечения безопасности дорожного движения необходимо
+                самостоятельно приобрести светоотражающие элементы одежды
+                (жилеты, нарукавники, браслеты и т.д.) для обучающихся.</a
+              >
+            </li>
+
+            <li class="w-full">
+              <img
+                loading="lazy"
+                src="https://www.kg-college.ru/files/index/rzhd.jpg"
+                alt="Banner 08"
+                class="w-full"
+              />
+            </li>
+
+            <li
+              class="w-full bg-white p-5 text-center text-[18px] xs:text-[16px] xxs:text-[14px]"
+            >
+              <a target="_blank" href="https://disk.yandex.ru/d/0-pyZj3_JfCorg"
+                >Памятка безопасности на железной дороге</a
+              >
+            </li>
+
+            <li class="w-full">
+              <a target="_blank" href="https://rsv.ru/news/1/4279/">
+                <img
+                  loading="lazy"
+                  src="https://www.kg-college.ru/files/index/den_prav_potrebitelej.jpg"
+                  alt="Banner 09"
+                  class="w-full"
+                />
+              </a>
+            </li>
+
+            <li class="w-full">
+              <a target="_blank" href="https://rsv.ru/news/1/4279/">
+                <img
+                  loading="lazy"
+                  src="https://www.kg-college.ru/files/index/chto_delaet_rebenok_v_seti.png"
+                  alt="Banner 10"
+                  class="w-full"
+                />
+              </a>
+            </li>
+
+            <li class="w-full">
+              <img
+                loading="lazy"
+                src="https://www.kg-college.ru/files/index/soobshhi-gde-torgujut-smertju/01.jpg"
+                alt="Banner 11"
+                class="w-full"
+              />
+            </li>
+
+            <li class="w-full">
+              <img
+                loading="lazy"
+                src="https://www.kg-college.ru/files/index/soobshhi-gde-torgujut-smertju/02.jpg"
+                alt="Banner 12"
+                class="w-full"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <!-- Section Contacts -->
+
+        <section id="sectionContacts" class="pt-[50px]">
+          <div>
+            <h1
+              class="text-fluid_title font-bold tracking-[6px] text-text_color_primary"
+            >
+              Контакты
+            </h1>
+            <div
+              class="grid grid-cols-3 grid-rows-2 gap-[50px] py-[50px] text-center 2md:mx-auto 2md:grid-cols-2 2md:px-4 sm:max-w-[400px] sm:grid-cols-1"
+            >
+              <!-- Corp 1 -->
+
+              <div
+                class="outlineElement max-w-full overflow-hidden rounded-[45px] bg-basic_color_deco1 bg-opacity-[15%] transition duration-500 ease-in-out hover:bg-basic_color_deco2 hover:bg-opacity-[25%]"
+              >
+                <div class="w-full rounded-[45px] bg-white bg-opacity-50">
+                  <h2
+                    class="p-5 text-fluid_card_title font-medium text-text_color_primary"
+                  >
+                    Корпус 1
+                  </h2>
+                </div>
+                <div class="p-5">
+                  <ul class="flex flex-col gap-4 text-fluid">
+                    <li>
+                      <a
+                        class="text-text_color_primary"
+                        target="_blank"
+                        href="https://yandex.ru/maps/-/CDGjeM-J"
+                      >
+                        305018, Россия, г. Курск, ул. Народная, д. 8
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:74712370219" class="text-text_color_links"
+                        >+7 (4712) 37-02-19</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:kgkptuip@mail.ru"
+                        class="text-text_color_links"
+                        >kgkptuip@mail.ru</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Corp 2 -->
+
+              <div
+                class="outlineElement max-w-full overflow-hidden rounded-[45px] bg-basic_color_deco1 bg-opacity-[15%] transition duration-500 ease-in-out hover:bg-basic_color_deco2 hover:bg-opacity-[25%]"
+              >
+                <div class="w-full rounded-[45px] bg-white bg-opacity-50">
+                  <h2
+                    class="p-5 text-fluid_card_title font-medium text-text_color_primary"
+                  >
+                    Корпус 2
+                  </h2>
+                </div>
+                <div class="p-5">
+                  <ul class="flex flex-col gap-4 text-fluid">
+                    <li>
+                      <a
+                        class="text-text_color_primary"
+                        target="_blank"
+                        href="https://yandex.ru/maps/-/CDGjeQLp"
+                      >
+                        305018, Россия, г. Курск, ул. Гагарина, д. 27
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:74712323622" class="text-text_color_links"
+                        >+7 (4712) 32-36-22</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:kgkptuip2@mail.ru"
+                        class="text-text_color_links"
+                        >kgkptuip2@mail.ru</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Corp 3 -->
+
+              <div
+                class="outlineElement max-w-full overflow-hidden rounded-[45px] bg-basic_color_deco1 bg-opacity-[15%] transition duration-500 ease-in-out hover:bg-basic_color_deco2 hover:bg-opacity-[25%]"
+              >
+                <div class="w-full rounded-[45px] bg-white bg-opacity-50">
+                  <h2
+                    class="p-5 text-fluid_card_title font-medium text-text_color_primary"
+                  >
+                    Корпус 3
+                  </h2>
+                </div>
+                <div class="p-5">
+                  <ul class="flex flex-col gap-4 text-fluid">
+                    <li>
+                      <a
+                        class="text-text_color_primary"
+                        target="_blank"
+                        href="https://yandex.ru/maps/-/CDGjeUMf"
+                      >
+                        305040, Россия, г. Курск, ул. 50 лет Октября, д. 165
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:74712576725" class="text-text_color_links"
+                        >+7 (4712) 57-67-25</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:kgpk3k@mail.ru"
+                        class="text-text_color_links"
+                        >kgpk3k@mail.ru</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Corp 4 -->
+
+              <div
+                class="outlineElement col-span-3 overflow-hidden rounded-[45px] bg-basic_color_deco1 bg-opacity-[15%] transition duration-500 ease-in-out hover:bg-basic_color_deco2 hover:bg-opacity-[25%] 2md:col-span-1"
+              >
+                <div class="w-full rounded-[45px] bg-white bg-opacity-50">
+                  <h2
+                    class="p-5 text-fluid_card_title font-medium text-text_color_primary"
+                  >
+                    Филиал в г. Курчатов
+                  </h2>
+                </div>
+                <div class="p-5">
+                  <ul class="flex flex-col gap-4 text-fluid">
+                    <li>
+                      <a
+                        class="text-text_color_primary"
+                        target="_blank"
+                        href="https://yandex.ru/maps/-/CDGjeU0P"
+                      >
+                        307250, Курская область, г. Курчатов, ул. Набережная, д.
+                        9 А
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:74713144835" class="text-text_color_links"
+                        >+7 (47131) 4-48-35</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:kgpk-kurchatov@yandex.ru"
+                        class="text-text_color_links"
+                        >kgpk-kurchatov@yandex.ru</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="outlineElement bg-basic_color_3">
+      <div class="container relative max-w-[1280px]">
+        <ul
+          class="flex items-center justify-between gap-7 py-[15px] text-[13px] font-light text-text_color_secondary sm:flex-col sm:text-center"
+        >
+          <li class="outlineElement">
+            <ul>
+              <li>
+                Телефоны/факс:
+                <a href="tel:74712370219">+7(4712) 37-02-19</a>
+              </li>
+              <li>
+                Юридический адрес:
+                <a target="_blank" href="https://yandex.ru/maps/-/CDGjeI79"
+                  >305018, <br />
+                  Россия, г.Курск, ул.Народная, 8</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="outlineElement">
+            <p>&copy; Copyright 2024. Все права защищены.</p>
+          </li>
+          <li class="outlineElement">
+            <ul class="flex items-center gap-6">
+              <li>
+                <a
+                  target="_blank"
+                  aria-label="VK"
+                  href="https://vk.com/traektoriakgpk"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 101 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="iconLink"
+                  >
+                    <g clip-path="url(#clip0_2_2)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.52944 7.02944C0.5 14.0589 0.5 25.3726 0.5 48V52C0.5 74.6274 0.5 85.9411 7.52944 92.9706C14.5589 100 25.8726 100 48.5 100H52.5C75.1274 100 86.4411 100 93.4706 92.9706C100.5 85.9411 100.5 74.6274 100.5 52V48C100.5 25.3726 100.5 14.0589 93.4706 7.02944C86.4411 0 75.1274 0 52.5 0H48.5C25.8726 0 14.5589 0 7.52944 7.02944ZM17.3752 30.4169C17.9168 56.4169 30.9167 72.0418 53.7084 72.0418H55.0003V57.1668C63.3753 58.0001 69.7082 64.1252 72.2498 72.0418H84.0835C80.8335 60.2085 72.2914 53.6668 66.9581 51.1668C72.2914 48.0835 79.7915 40.5835 81.5831 30.4169H70.8328C68.4995 38.6669 61.5836 46.1668 55.0003 46.8751V30.4169H44.2499V59.2501C37.5833 57.5835 29.1668 49.5002 28.7918 30.4169H17.3752Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_2">
+                        <rect
+                          width="100"
+                          height="100"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a aria-label="Email" href="mailto:kgkptuip@mail.ru">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                    class="iconLink h-[35px] w-[35px]"
+                  >
+                    <path
+                      d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+                    />
+                    <path
+                      d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

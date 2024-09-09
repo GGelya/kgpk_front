@@ -1,0 +1,1786 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template page</title>
+    <link rel="stylesheet" href="./public/styles.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="./scripts.js"></script>
+  </head>
+  <body class="box-border bg-bg_color font-main tracking-[0px]">
+    <section>
+      <header class="container mx-auto bg-basic_color_1">
+        <div
+          id="visionImpairedPanel"
+          class="hidden w-full bg-gray-100 p-4 outline outline-element_color transition duration-300 max-w-[1280px] mx-auto"
+        >
+          <div
+            class="flex justify-center gap-16 md:gap-14 sm:flex-col sm:gap-5"
+          >
+            <!-- fontsize  -->
+            <div class="visImp_changeFontsize flex flex-col items-center gap-3">
+              <span class="text-center text-[18px] font-medium md:text-[16px]"
+                >Размер шрифта</span
+              >
+              <div class="flex items-center gap-5">
+                <!-- outline outline-black outline-1 rounded-md p-2 -->
+                <button
+                  id="visImp_changeFontsize_lv1"
+                  class="text-[16px] bg-white font-semibold md:text-[14px] outline outline-black outline-1 rounded-md p-2"
+                >
+                  Аа
+                </button>
+                <button
+                  id="visImp_changeFontsize_lv2"
+                  class="text-[20px] bg-white font-semibold md:text-[18px] outline outline-black outline-1 rounded-md p-2"
+                >
+                  Аа
+                </button>
+                <button
+                  id="visImp_changeFontsize_lv3"
+                  class="text-[24px] bg-white font-semibold md:text-[22px] outline outline-black outline-1 rounded-md p-2"
+                >
+                  Аа
+                </button>
+              </div>
+            </div>
+            <!-- color theme  -->
+            <div
+              class="visImp_changeColorTheme flex flex-col items-center gap-3"
+            >
+              <span class="text-center text-[18px] font-medium md:text-[16px]"
+                >Цветовая схема</span
+              >
+              <div class="flex items-center gap-3 text-[20px] md:text-[18px]">
+                <button
+                  id="visImp_changeColorTheme_ver1"
+                  class="bg-white p-2 font-semibold text-black outline outline-black outline-1 rounded-md"
+                >
+                  B
+                </button>
+                <button
+                  id="visImp_changeColorTheme_ver2"
+                  class="bg-black p-2 font-semibold text-white outline outline-black outline-1 rounded-md"
+                >
+                  B
+                </button>
+                <button
+                  id="visImp_changeColorTheme_ver3"
+                  class="bg-[#3B2716] p-2 font-semibold text-[#A9E44D] outline outline-black outline-1 rounded-md"
+                >
+                  B
+                </button>
+              </div>
+            </div>
+            <!-- traking -->
+            <div class="visImp_changeTraking flex flex-col items-center gap-3">
+              <span class="text-center text-[18px] font-medium md:text-[16px]"
+                >Трекинг</span
+              >
+              <div class="flex items-center gap-3 text-[20px] md:text-[18px]">
+                <button
+                  id="visImp_changeTraking_trak1"
+                  class="flex bg-white p-2 font-semibold text-black outline outline-1 rounded-md"
+                >
+                  <span>A</span> <span>B</span>
+                </button>
+                <button
+                  id="visImp_changeTraking_trak2"
+                  class="flex gap-2 bg-white p-2 font-semibold text-black outline outline-1 rounded-md"
+                >
+                  <span>A</span> <span>B</span>
+                </button>
+                <button
+                  id="visImp_changeTraking_trak3"
+                  class="flex gap-3 bg-white p-2 font-semibold text-black outline outline-1 rounded-md"
+                >
+                  <span>A</span> <span>B</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav
+          id="navDesktop"
+          class="container z-[3] mx-auto flex max-w-[1280px] select-none items-center justify-between py-[25px] md:pb-[50px] xxs:px-0"
+        >
+          <!-- Logo -->
+          <a href="./index.html" class="z-[2] flex-shrink-0 select-none"
+            ><img
+              class="logoKGPK h-16 xs:h-[52px] 2xxs:h-[48px]"
+              src="./src/img/kg-logo.png"
+              alt="logo KGPK"
+          /></a>
+          <div
+            class="flex items-center gap-5 2md:gap-2 xxs:flex-wrap xxs:justify-end"
+          >
+            <!-- Button version for the visually impaired -->
+            <div>
+              <button
+                id="visionImpairedBtn"
+                aria-label="Enable version for the visually impaired"
+                type="submit"
+                class="outlineElement flex items-center gap-2 rounded-xl bg-basic_color_3 p-3 2md:bg-transparent xs:p-[5px]"
+              >
+                <span
+                  class="visionImpairedEnable text-[18px] font-normal text-text_color_secondary 2md:hidden"
+                >
+                  Версия для слабовидящих
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="white"
+                  class="visionImpairedEnable h-9 xs:h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg>
+
+                <span
+                  class="visionImpairedDisable hidden text-[18px] font-normal text-text_color_secondary 2md:hidden"
+                >
+                  Стандартная версия
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="white"
+                  class="visionImpairedDisable hidden h-9 xs:h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Input-search -->
+            <div>
+              <button
+                id="searchBarBtn"
+                aria-label="Search open"
+                type="submit"
+                class="outlineElement flex items-center gap-2 rounded-xl bg-basic_color_3 p-3 2md:bg-transparent xs:p-[5px]"
+              >
+                <span
+                  class="text-[18px] font-normal text-text_color_secondary 2md:hidden"
+                  >Поиск</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="white"
+                  class="h-9 xs:h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              id="searchBarPanel"
+              class="outlineElement absolute left-0 top-0 z-[2] w-full translate-y-[-100%] bg-basic_color_3 p-7 transition duration-300"
+            >
+              <div
+                id="searchForm"
+                method="#"
+                action="#"
+                class="mx-auto flex max-w-[600px] items-center gap-4"
+              >
+                <style>
+                  ::-webkit-search-decoration,
+                  ::-webkit-search-cancel-button,
+                  ::-webkit-search-results-button,
+                  ::-webkit-search-results-decoration {
+                    -webkit-appearance: none;
+                  }
+                </style>
+                <input
+                  name="query"
+                  type="search"
+                  autocomplete="off"
+                  class="h-12 w-full rounded-md bg-transparent p-2 text-text_color_secondary outline outline-1 outline-element_color"
+                  placeholder="Поиск"
+                />
+                <button type="submit" id="searchBtn" class="outlineElement">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="white"
+                    class="h-9 xs:h-7"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-label="Search bar panel close"
+                  id="searchBarPanelClose"
+                  type="submit"
+                  class="focus:shadow-outline outlineElement z-[3] transform cursor-pointer select-none p-1 transition duration-500 ease-in-out focus:outline-none active:scale-x-110"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="white"
+                    class="h-10 w-10 xs:h-8 xs:w-8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Button Burger-menu -->
+            <div>
+              <button
+                id="hyperMenuBtn"
+                aria-label="Menu open"
+                type="submit"
+                class="outlineElement flex items-center gap-2 rounded-xl bg-basic_color_3 p-3 2md:bg-transparent xs:p-[5px]"
+              >
+                <span
+                  class="text-[18px] font-normal text-text_color_secondary 2md:hidden"
+                >
+                  Меню
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="white"
+                  class="h-9 xs:h-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hyper menu -->
+        <nav
+          id="hyperNavMobile"
+          class="fixed left-0 top-0 z-[2] flex h-full w-full translate-y-[-100%] flex-col transition duration-300 will-change-transform"
+        >
+          <div
+            class="absolute left-0 top-0 z-[-1] h-full w-full bg-basic_color_3 bg-opacity-[95%] backdrop-blur-[6px]"
+          ></div>
+
+          <!-- Backgrounds for hyper menu -->
+          <img
+            id="bgMobile-navMobile"
+            src="src/img/hyperMenuBcgs/hyperMenu_navMobile.webp"
+            alt="hyperNavBcgMobile1"
+            class="bcgImage absolute z-[-2] h-full w-full object-cover object-center"
+          />
+          <img
+            id="bgMobile-infoAboutEduOrg"
+            src="src/img/hyperMenuBcgs/hyperMenu_infoAboutEduOrg.webp"
+            alt="hyperNavBcgMobile2"
+            class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
+          />
+          <img
+            id="bgMobile-toApplicant"
+            src="src/img/hyperMenuBcgs/hyperMenu_toApplicant.webp"
+            alt="hyperNavBcgMobile3"
+            class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
+          />
+          <img
+            id="bgMobile-forStudents"
+            src="src/img/hyperMenuBcgs/hyperMenu_forStudents.webp"
+            alt="hyperNavBcgMobile4"
+            class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
+          />
+          <img
+            id="bgMobile-contacts"
+            src="src/img/hyperMenuBcgs/hyperMenu_contacts.webp"
+            alt="hyperNavBcgMobile5"
+            class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
+          />
+          <img
+            id="bgMobile-associations"
+            src="src/img/hyperMenuBcgs/hyperMenu_associations.webp"
+            alt="hyperNavBcgMobile6"
+            class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
+          />
+
+          <!-- Inside header panel-->
+          <div
+            class="container z-[2] mx-auto flex select-none items-center justify-between bg-basic_color_3 px-[15px] py-[25px]"
+          >
+            <!-- Logo -->
+            <a href="./index.html" class="z-[3] flex-shrink-0 select-none"
+              ><img
+                class="logoKGPK h-16 xs:h-[52px] 2xxs:h-[48px]"
+                src="./src/img/kg-logo.png"
+                alt="logo KGPK"
+            /></a>
+
+            <!-- Button Close Burger-menu -->
+            <button
+              aria-label="Menu close"
+              id="hyperMenuBtn__close"
+              type="submit"
+              class="focus:shadow-outline z-[3] transform cursor-pointer select-none p-1 transition duration-500 ease-in-out focus:outline-none active:scale-x-110"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="white"
+                class="h-10 w-10 xs:h-8 xs:w-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Gradient overlay at the top -->
+          <div class="sticky top-0 z-[2]">
+            <div
+              class="absolute left-0 top-0 z-[2] h-14 w-full bg-gradient-to-b from-basic_color_3 to-transparent"
+            ></div>
+          </div>
+
+          <!-- Hyper Navigation container -->
+          <div
+            class="hyperNavMobile__container container relative flex-grow overflow-y-auto overflow-x-hidden pt-[5%] scrollbar-none"
+          >
+            <!-- Gradient overlay at the bottom -->
+            <div
+              class="fixed bottom-0 left-0 z-[2] h-14 w-full bg-gradient-to-t from-basic_color_3 to-transparent"
+            ></div>
+
+            <!-- Navigation -->
+            <nav id="navMobile" class="py-[50px]">
+              <ul
+                class="navMenuMobile flex max-w-[500px] select-none flex-col justify-center gap-8 text-fluid_menu_section font-semibold text-text_color_secondary"
+              >
+                <li class="navMenuMobile__btn">
+                  <a
+                    id="hyperMenuMobileBtn_infoAboutEduOrg"
+                    class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
+                    >Сведения об образовательной организации
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="navMenuMobile__btn">
+                  <a
+                    id="hyperMenuMobileBtn_toApplicant"
+                    class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
+                    >Абитуриенту
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="navMenuMobile__btn">
+                  <a
+                    id="hyperMenuMobileBtn_forStudents"
+                    class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
+                    >Студентам
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="navMenuMobile__btn">
+                  <a
+                    id="hyperMenuMobileBtn_contacts"
+                    class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
+                    >Контакты
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="navMenuMobile__btn">
+                  <a
+                    id="hyperMenuMobileBtn_associations"
+                    class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
+                    >Объединения и центры
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Content infoAboutEduOrg mobile -->
+            <div
+              id="mobileContent_infoAboutEduOrg"
+              class="mobileContent container hidden select-none py-[50px] text-[18px] text-text_color_secondary md:text-[16px]"
+            >
+              <a
+                id="btnToBack_infoAboutEduOrg"
+                class="outlineElement mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 font-extrabold text-black"
+                ><svg
+                  class="h-[30px] w-[30px]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12l4-4m-4 4 4 4"
+                  />
+                </svg>
+
+                НАЗАД</a
+              >
+              <span
+                class="before: my-5 block h-[1px] w-full bg-element_color"
+              ></span>
+              <ul class="flex max-w-[400px] flex-col gap-6">
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="./baseInfo.html" class="font-bold"
+                    >Основные сведения</a
+                  >
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Документы</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Образование</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Структура и органы управления</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Руководство и педагогический состав</a>
+                </li>
+
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Образовательные стандарты и требования</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Стипендии и меры поддержки обучающихся</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#"
+                    >Вакантные места для приема (перевода) обучающихся</a
+                  >
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Платные образовательные услуги</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#"
+                    >Организация питания в образовательной организации</a
+                  >
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Меню горячего питания</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#"
+                    >Материально-техническое обеспечение и оснащенность
+                    образовательного процесса</a
+                  >
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Международное сотрудничество</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Финансово-хозяйственная деятельность</a>
+                </li>
+                <li
+                  class="transform transition duration-500 ease-in-out active:scale-110"
+                >
+                  <a href="#">Доступная среда</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Content toApplicant mobile -->
+            <div
+              id="mobileContent_toApplicant"
+              class="mobileContent mx-auto hidden select-none gap-8 py-[50px] text-fluid_menu_section text-text_color_secondary"
+            >
+              <a
+                id="btnToBack_toApplicant"
+                class="outlineElement btnBackMenu mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 text-fluid_menu font-extrabold text-black"
+                ><svg
+                  class="h-[30px] w-[30px]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12l4-4m-4 4 4 4"
+                  />
+                </svg>
+
+                НАЗАД</a
+              >
+              <span
+                class="before: my-5 block h-[1px] w-full bg-element_color"
+              ></span>
+
+              <ul class="flex max-w-[550px] flex-col gap-8">
+                <li>
+                  <a
+                    href="#"
+                    id="feedback"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Обратная связь</a
+                  >
+                </li>
+                <li>
+                  <span
+                    id="admission_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Поступление
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-admission_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li><a href="#">Правила приёма</a></li>
+                      <li><a href="#">Документы для поступления</a></li>
+                      <li>
+                        <a href="#"
+                          >Перечень специальностей и профессий, по которым
+                          объявляется прием</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Условия приема на обучение по договорам об оказании
+                          платных образовательных услуг</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Информация о необходимости прохождения поступающими
+                          обязательного предварительного медицинского осмотра</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="career_guidance_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Профориентация
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-career_guidance_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#"
+                          >Профориентационный марафон "Моя будущая профессия -
+                          строитель"</a
+                        >
+                      </li>
+                      <li><a href="#">Обучение инвалидов и лиц с ОВЗ</a></li>
+                      <li><a href="#">Профориентационный проект #ПРОБУЙ</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="enrollment_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Зачисление
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-enrollment_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Приказы о зачислении студентов</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >График встречи с поступающими по зачислению</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Сведения о количестве поданных заявлений по каждой
+                          специальности и профессии с выделением форм получения
+                          образования</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="admission_committee_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Приёмная комиссия
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-admission_committee_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Адреса и телефоны приемной комиссии</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="entrance_exams_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Вступительные экзамены
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-entrance_exams_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#"
+                          >Расписание проведения вступительных испытаний</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Экзаменационные материалы для проведения
+                          вступительных испытаний по специальности 54.02.01
+                          Дизайн (по отраслям)</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Список абитуриентов, допущенных к вступительным
+                          испытаниям по специальности 20.02.04 Пожарная
+                          безопасность</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Результаты вступительных испытаний</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Правила подачи и рассмотрения апелляций по
+                          результатам вступительных испытаний</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Особенности проведения вступительных испытаний для
+                          инвалидов и лиц с ограниченными возможностями
+                          здоровья</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="dormitory_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Общежитие
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-dormitory_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#"
+                          >Информация о наличии общежития и количестве мест в
+                          общежитиях</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Количество вакантных мест в общежитии</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Список студентов на заселение в общежития</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Content forStudents mobile -->
+            <div
+              id="mobileContent_forStudents"
+              class="mobileContent mx-auto hidden select-none gap-8 py-[50px] text-fluid_menu_section text-text_color_secondary"
+            >
+              <a
+                id="btnToBack_forStudents"
+                class="outlineElement mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 text-fluid_menu font-extrabold text-black"
+                ><svg
+                  class="h-[30px] w-[30px]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12l4-4m-4 4 4 4"
+                  />
+                </svg>
+
+                НАЗАД</a
+              >
+              <span
+                class="before: my-5 block h-[1px] w-full bg-element_color"
+              ></span>
+
+              <ul class="flex max-w-[550px] flex-col gap-8">
+                <li>
+                  <a
+                    href="./studActivity.html"
+                    id="student_body_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Студенческий совет</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://m.vk.com/schoolcuratorkgpk"
+                    id="school_curator"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Школа куратора</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="schedule_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Расписание</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="order_certificate_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Заказать справку об обучении</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="employment_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Трудоустройство</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="elInfoEdu_environment"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Электронная информационно-образовательная среда</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="ask_director"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Задай вопрос директору</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="kgpk_news"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Новости КГПК</a
+                  >
+                </li>
+                <li>
+                  <span
+                    id="demoExam_worldSkills"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Демонстрационный экзамен по стандартам Ворлдскиллс Россия
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-demoExam_worldSkills hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Компетенция: Парикмахерское искусство</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Компетенция: Программные решения для бизнеса</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Компетенция: Хлебопечение</a>
+                      </li>
+                      <li>
+                        <a href="#">Архив</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="useful_info_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Полезная информация
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-useful_info_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Фестиваль "Цифровое искусство - 2023"</a>
+                      </li>
+                      <li>
+                        <a href="https://rkc.kg-college.ru/"
+                          >Профессионалы | Всероссийское чемпионатное движение
+                          по профессиональному мастерству</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Электронный ресурс «PROFобразование»</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Образовательное кредитование: пособие для студентов
+                          СПО</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Горячая линия по приему, профориентации, получению
+                          профессионального образования и профессионального
+                          обучения, последующему трудоустройству лиц с
+                          инвалидностью и ОВЗ
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Горячая линия в системе СПО на базе ФГБОУ ДПО ИРПО
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Оценка качества образовательной деятельности
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Проектный офис по реализации проектов в рамках
+                          регионального проекта "Эффективный регион"
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Практическая подготовка </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Информация о распределении образовательными
+                          организациями, находящимися в ведении Минпросвещения
+                          России, контрольных цифр приема и мест, выделенных на
+                          целевое обучение, по всем реализуемым УГСН на
+                          2023-2024 учебный год
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Всероссийский Урок трудовой доблести «Трудом
+                          прославлявшие Родину»</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Базовая профессиональная образовательная организация
+                          инклюзивного образования</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Инклюзивное образование</a>
+                      </li>
+                      <li>
+                        <a href="#">Психолого-педагогическое сопровождение</a>
+                      </li>
+                      <li>
+                        <a href="#">ГОСУСЛУГИ</a>
+                      </li>
+                      <li>
+                        <a href="https://rpgu.rkursk.ru/"
+                          >Курская область ГОСУСЛУГИ</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Комитет образования и науки Курской области</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://edu.gov.ru/"
+                          >Министерство просвещения Российской Федерации</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Образование России</a>
+                      </li>
+                      <li>
+                        <a href="#">Антикризис - время учиться!</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Единое окно доступа к образовательным ресурсам</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.edu.ru/"
+                          >Российское образование. Федеральный портал</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://trudvsem.ru/"
+                          >Работа России. Общественная база вакансий</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >ВПРАВЕ.РФ. Государственная платформа бесплатной
+                          юридической помощи Минюста России</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Сборник стихов собственного сочинения студентов</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Образовательный кредит</a>
+                      </li>
+                      <li>
+                        <a href="#">Кредит на образование с господдержкой</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Профилактика правонарушений несовершеннолетних</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Предупреждение краж и мошенничеств, совершаемых с
+                          помощью информационно-коммуникационных технологий</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Результаты независимой оценки качества оказания услуг
+                          организациями</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Профилактика употребления курительных смесей</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Противодействие коррупции</a>
+                      </li>
+                      <li>
+                        <a href="#">Безопасный Интернет. Советы родителям</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Фотовыставка «Герои с вечно русским сердцем»</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Всероссийский Сводный обзор:
+                          «Общественно-государственное партнерство в субъектах
+                          РФ 2021»</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Содействие гражданам в случае международного
+                          похищения детей
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Сообщи, где торгуют смертью</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Официальное обращение ОИА "Новости России"</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Всероссийская акция «Стоп ВИЧ/СПИД»</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Формирование Всероссийской интернет-площадки "Органы
+                          власти субъектов РФ – навстречу детям!"</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Памятка о необходимости соблюдения ПДД при перевозке
+                          несовершеннолетних, а также разъяснения детям основ
+                          безопасного поведения на дорогах</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Профилактика туберкулеза</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Уголовная ответственность за преступления, связанные
+                          с наркотиками</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Информационный ролик</a>
+                      </li>
+                      <li>
+                        <a href="#">Стипендии и меры поддержки обучающихся</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Советы родителям по безопасности детей в сети
+                          Интернет</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Правовая ответственность за осуществление
+                          эктремистской деятельности</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Экстренные службы психологической помощи</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Методические рекомендации по заполнению формы
+                          сообщения о наличии на страницах сайтов в сети
+                          Интернет противоправной информации
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Content contacts mobile -->
+            <div
+              id="mobileContent_contacts"
+              class="mobileContent mx-auto hidden select-none gap-8 py-[50px] text-fluid_menu_section text-text_color_secondary"
+            >
+              <a
+                id="btnToBack_contacts"
+                class="outlineElement mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 text-fluid_menu font-extrabold text-black"
+                ><svg
+                  class="h-[30px] w-[30px]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12l4-4m-4 4 4 4"
+                  />
+                </svg>
+
+                НАЗАД</a
+              >
+              <span
+                class="before: my-5 block h-[1px] w-full bg-element_color"
+              ></span>
+
+              <ul class="flex max-w-[550px] flex-col gap-8">
+                <li>
+                  <a
+                    id="academic_buildings_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Учебные корпуса</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="student_dormitories_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Студенческие общежития</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Content associations mobile -->
+            <div
+              id="mobileContent_associations"
+              class="mobileContent mx-auto hidden select-none gap-8 py-[50px] text-fluid_menu_section text-text_color_secondary"
+            >
+              <a
+                id="btnToBack_associations"
+                class="outlineElement mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 text-fluid_menu font-extrabold text-black"
+                ><svg
+                  class="h-[30px] w-[30px]"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12l4-4m-4 4 4 4"
+                  />
+                </svg>
+
+                НАЗАД</a
+              >
+              <span
+                class="before: my-5 block h-[1px] w-full bg-element_color"
+              ></span>
+
+              <ul class="flex max-w-[550px] flex-col gap-8">
+                <li>
+                  <a
+                    id="board_of_trustees_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Попечительский совет
+                  </a>
+                </li>
+                <li>
+                  <a
+                    id="eco_park"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Центр дополнительного образования детей и взрослых
+                    «ЭКО-ПАРК»
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://abilympics.kg-college.ru/"
+                    id="abilimpix"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Региональный центр развития движения «Абилимпикс»
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://rumc.kg-college.ru/"
+                    id="rumc_spo"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >РУМЦ СПО
+                  </a>
+                </li>
+                <li>
+                  <span
+                    id="regional_resource_center_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Региональный ресурсный центр
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-regional_resource_center_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li><a href="#">Деятельность Ресурсного центра</a></li>
+                      <li><a href="#">Нормативные документы</a></li>
+                      <li>
+                        <a href="#">О создании Ресурсного центра</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="volunteer_club_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Клуб Доброволец
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-volunteer_club_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Руководство клуба</a>
+                      </li>
+                      <li><a href="#">Федеральный закон</a></li>
+                      <li><a href="#">Герб и гимн клуба</a></li>
+                      <li><a href="#">Музей клуба</a></li>
+                      <li><a href="#">Основные направления</a></li>
+                      <li><a href="#">Общее положение</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="sports_club_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Спортклуб "КГПК"
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-sports_club_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">Официальная группа VK</a>
+                      </li>
+                      <li>
+                        <a href="#">Документы</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span
+                    id="multifunctional_center_mobile"
+                    class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
+                    >Многофункциональный центр прикладных квалификаций
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="decoArrow inline-block transition-transform duration-200"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <div
+                    class="section__content_mobile section__content_mobile-multifunctional_center_mobile hidden"
+                  >
+                    <ul
+                      class="flex flex-col gap-8 pl-8 pt-8 text-fluid_menu md:pl-4"
+                    >
+                      <li>
+                        <a href="#">О создании МЦПК</a>
+                      </li>
+                      <li><a href="#">Стоимость обучения</a></li>
+                      <li><a href="#">Нормативные документы</a></li>
+                      <li><a href="#">Итоги деятельности</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <h1
+        class="container max-w-[1280px] pt-[50px] text-center text-text_color_primary text-fluid_title font-bold xs:pb-[100px] xs:pt-[350px]"
+      >
+        Page name
+      </h1>
+    </section>
+
+    <!-- Секция с тектом  -->
+
+    <section class="pt-[50px]">
+      <div class="container max-w-[1280px]">
+        <div class="flex flex-col gap-[10px] outlineElement">
+          <h3
+            class="text-fluid_title_type2 text-text_color_primary font-semibold"
+          >
+            Paragraph name
+          </h3>
+          <p
+            class="text-fluid text-text_color_primary font-normal leading-normal"
+          >
+            Text
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция с таблицей (если имеется) -->
+
+    <section class="py-[50px]">
+      <div class="container max-w-[1280px]">
+        <div class="flex flex-col gap-[50px]">
+          <h3
+            class="text-fluid_title_type2 text-text_color_primary font-semibold"
+          >
+            Table name
+          </h3>
+
+          <div class="relative overflow-x-auto scrollbar scrollbar-track-transparent scrollbar-thumb-element_color outlineElement">
+            <table class="w-full text-left text-text_color_primary text-fluid">
+              <thead
+                class="bg-basic_color_table_title font-semibold outlineElement"
+              >
+                <tr>
+                  <th scope="col" class="px-6 py-3">№</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                </tr>
+              </thead>
+              <tbody
+                class="border-b bg-basic_color_table_body font-medium"
+              >
+                <tr>
+                  <th scope="row" class="px-6 py-4 font-semibold">1</th>
+                  <td class="px-6 py-4">content</td>
+                  <td class="px-6 py-4">content</td>
+                  <td class="px-6 py-4">content</td>
+                  <td class="px-6 py-4">content</td>
+                  <td class="px-6 py-4">content</td>
+                  <td class="px-6 py-4">content</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Позиционирование для footer - absolute bottom-0 left-0 w-full !!! Для демонстрации конечного результата !!!-->
+    <!-- При заполнении страницы большим объемом конента - удалить absolute bottom-0 left-0 w-full-->
+    <footer class="outlineElement bg-basic_color_3 absolute bottom-0 left-0 w-full">
+      <div class="container relative max-w-[1280px]">
+        <ul
+          class="flex items-center justify-between gap-7 py-[15px] text-[13px] font-light text-text_color_secondary sm:flex-col sm:text-center"
+        >
+          <li class="outlineElement">
+            <ul>
+              <li>
+                Телефоны/факс:
+                <a href="tel:74712370219">+7(4712) 37-02-19</a>
+              </li>
+              <li>
+                Юридический адрес:
+                <a target="_blank" href="https://yandex.ru/maps/-/CDGjeI79"
+                  >305018, <br />
+                  Россия, г.Курск, ул.Народная, 8</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="outlineElement">
+            <p>&copy; Copyright 2024. Все права защищены.</p>
+          </li>
+          <li class="outlineElement">
+            <ul class="flex items-center gap-6">
+              <li>
+                <a
+                  target="_blank"
+                  aria-label="VK"
+                  href="https://vk.com/traektoriakgpk"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 101 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="iconLink"
+                  >
+                    <g clip-path="url(#clip0_2_2)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.52944 7.02944C0.5 14.0589 0.5 25.3726 0.5 48V52C0.5 74.6274 0.5 85.9411 7.52944 92.9706C14.5589 100 25.8726 100 48.5 100H52.5C75.1274 100 86.4411 100 93.4706 92.9706C100.5 85.9411 100.5 74.6274 100.5 52V48C100.5 25.3726 100.5 14.0589 93.4706 7.02944C86.4411 0 75.1274 0 52.5 0H48.5C25.8726 0 14.5589 0 7.52944 7.02944ZM17.3752 30.4169C17.9168 56.4169 30.9167 72.0418 53.7084 72.0418H55.0003V57.1668C63.3753 58.0001 69.7082 64.1252 72.2498 72.0418H84.0835C80.8335 60.2085 72.2914 53.6668 66.9581 51.1668C72.2914 48.0835 79.7915 40.5835 81.5831 30.4169H70.8328C68.4995 38.6669 61.5836 46.1668 55.0003 46.8751V30.4169H44.2499V59.2501C37.5833 57.5835 29.1668 49.5002 28.7918 30.4169H17.3752Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_2">
+                        <rect
+                          width="100"
+                          height="100"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a aria-label="Email" href="mailto:kgkptuip@mail.ru">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                    class="iconLink h-[35px] w-[35px]"
+                  >
+                    <path
+                      d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+                    />
+                    <path
+                      d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
