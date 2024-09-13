@@ -31,54 +31,82 @@
     /* fontsize  */
 
     /* 14px to 18px */
-    --fluid: clamp(0.875rem, 2.5vw + 0.5rem, 1.125rem); 
-    /* 20px to 24px */
-    --fluid_title: clamp(1.25rem, 2.5vw + 0.5rem, 1.5rem);
+    --fluid: clamp(0.875rem, 2.5vw + 0.5rem, 1.125rem);
 
-    --fluid_title_main: clamp(1.25rem, 2.5vw + 0.5rem, 2rem);
+    /* 20px to 26px */
+    --fluid_title: clamp(1.25rem, 2.5vw + 0.5rem, 1.625rem);
+
     /* 12px to 16px */
     --fluid_subtitle: clamp(0.75rem, 2.5vw + 0.5rem, 1rem);
 
-    --fluid_title_type2: clamp(1rem, 4vw + 0.5rem, 1.875rem);
-    --fluid_menu: clamp(1rem, 2vw + 0.5rem, 1.125rem);
-    --fluid_menu_section: clamp(1.25rem, 2vw + 1rem, 1.75rem);
-    --fluid_card_title: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+    /* 20px to 24px */
+    --fluid_card_title: clamp(1.25rem, 2.5vw + 0.5rem, 1.5rem);
+
+    /* 20px to 26px */
+    --fluid_menu_section: clamp(1.25rem, 2.5vw + 0.5rem, 1.625rem);
+
+    /* 12px to 14px */
+    --fluid_links: clamp(0.75rem, 2.5vw + 0.5rem, 0.875rem);
   }
 
-  .lv1{
-    --fluid: clamp(0.75rem, 2.5vw + 0.5rem, 1.25rem);
-    --fluid_title: clamp(1.25rem, 4vw + 0.5rem, 2.25rem);
-    --fluid_title_type2: clamp(1rem, 4vw + 0.5rem, 1.875rem);
-    --fluid_subtitle: clamp(0.75rem, 2vw + 0.5rem, 1.375rem);
-    --fluid_menu: clamp(1rem, 2vw + 0.5rem, 1.125rem);
-    --fluid_menu_section: clamp(1.25rem, 2vw + 1rem, 1.75rem);
-    --fluid_card_title: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
-    --fluid_card_studActiv: clamp(0.75rem, 2.5vw + 0.5rem, 1.125rem);
-    --fluid_card_studActiv_title: clamp(0.875rem, 2.5vw + 0.5rem, 1.5rem);
+  .lv1 {
+    /* 14px to 18px */
+    --fluid: clamp(0.875rem, 2.5vw + 0.5rem, 1.125rem);
+
+    /* 20px to 26px */
+    --fluid_title: clamp(1.25rem, 2.5vw + 0.5rem, 1.625rem);
+
+    /* 12px to 16px */
+    --fluid_subtitle: clamp(0.75rem, 2.5vw + 0.5rem, 1rem);
+
+    /* 20px to 24px */
+    --fluid_card_title: clamp(1.25rem, 2.5vw + 0.5rem, 1.5rem);
+
+    /* 20px to 26px */
+    --fluid_menu_section: clamp(1.25rem, 2.5vw + 0.5rem, 1.625rem);
+
+    /* 12px to 14px */
+    --fluid_links: clamp(0.75rem, 2.5vw + 0.5rem, 0.875rem);
   }
 
-  .lv2{
-    --fluid: clamp(0.95rem, 2.5vw + 0.5rem, 1.45rem);
-  --fluid_title: clamp(1.45rem, 4vw + 0.5rem, 2.45rem);
-  --fluid_title_type2: clamp(1.125rem, 4vw + 0.625rem, 2rem);
-  --fluid_subtitle: clamp(0.875rem, 2vw + 0.5rem, 1.5rem);
-  --fluid_menu: clamp(1.2rem, 2vw + 0.5rem, 1.325rem);
-  --fluid_menu_section: clamp(1.45rem, 2vw + 1rem, 1.95rem);
-  --fluid_card_title: clamp(1.2rem, 2.5vw + 0.5rem, 1.45rem);
-  --fluid_card_studActiv: clamp(0.95rem, 2.5vw + 0.5rem, 1.325rem);
-  --fluid_card_studActiv_title: clamp(1.075rem, 2.5vw + 0.5rem, 1.7rem);
+  .lv2 {
+    /* 16px to 20px */
+    --fluid: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+
+    /* 22px to 28px */
+    --fluid_title: clamp(1.375rem, 2.5vw + 0.5rem, 1.75rem);
+
+    /* 14px to 18px */
+    --fluid_subtitle: clamp(0.875rem, 2.5vw + 0.5rem, 1.125rem);
+
+    /* 22px to 26px */
+    --fluid_card_title: clamp(1.375rem, 2.5vw + 0.5rem, 1.625rem);
+
+    /* 22px to 28px */
+    --fluid_menu_section: clamp(1.375rem, 2.5vw + 0.5rem, 1.75rem);
+
+    /* 14px to 16px */
+    --fluid_links: clamp(0.875rem, 2.5vw + 0.5rem, 1rem);
   }
 
-  .lv3{
-    --fluid: clamp(1rem, 2.5vw + 0.75rem, 1.5rem);
-    --fluid_title: clamp(1.5rem, 4vw + 0.75rem, 2.5rem);
-    --fluid_title_type2: clamp(1.25rem, 4vw + 0.75rem, 2.125rem);
-    --fluid_subtitle: clamp(1rem, 2vw + 0.5rem, 1.625rem);
-    --fluid_menu: clamp(1.25rem, 2vw + 0.75rem, 1.325rem);
-    --fluid_menu_section: clamp(1.5rem, 2vw + 1.25rem, 1.95rem);
-    --fluid_card_title: clamp(1.25rem, 2.5vw + 0.75rem, 1.5rem);
-    --fluid_card_studActiv: clamp(1rem, 2.5vw + 0.75rem, 1.325rem);
-    --fluid_card_studActiv_title: clamp(1.125rem, 2.5vw + 0.75rem, 1.7rem);
+  .lv3 {
+    /* 18px to 22px */
+    --fluid: clamp(1.125rem, 2.5vw + 0.5rem, 1.375rem);
+
+    /* 24px to 30px */
+    --fluid_title: clamp(1.5rem, 2.5vw + 0.5rem, 1.875rem);
+
+    /* 16px to 20px */
+    --fluid_subtitle: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+
+    /* 24px to 28px */
+    --fluid_card_title: clamp(1.5rem, 2.5vw + 0.5rem, 1.75rem);
+
+    /* 24px to 30px */
+    --fluid_menu_section: clamp(1.5rem, 2.5vw + 0.5rem, 1.875rem);
+
+    /* 16px to 18px */
+    --fluid_links: clamp(1rem, 2.5vw + 0.5rem, 1.125rem);
   }
 
   .ver1 {

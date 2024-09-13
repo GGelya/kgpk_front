@@ -43,12 +43,10 @@ module.exports = {
       fontSize: {
         fluid: 'var(--fluid)',
         fluid_title: 'var(--fluid_title)',
-        fluid_title_main: 'var(--fluid_title_main)',
-        fluid_title_type2: 'var(--fluid_title_type2)',
         fluid_subtitle: 'var(--fluid_subtitle)',
-        fluid_menu: 'var(--fluid_menu)',
-        fluid_menu_section: 'var(--fluid_menu_section)',
         fluid_card_title: 'var(--fluid_card_title)',
+        fluid_menu_section: 'var(--fluid_menu_section)',
+        fluid_links: 'var(--fluid_links)',
       },
       fontFamily: {
         main: ['Montserrat'],

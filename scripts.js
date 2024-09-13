@@ -488,6 +488,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  var swiper = new Swiper(".swiper_infoAboutEduOrg", {
+    loop: true,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 20,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
   // Swiper
 
   var swiper = new Swiper(".mySwiper", {
