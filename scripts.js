@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function () {
         decoItem.classList.add("hidden");
       });
     }
-  
+
     if (bgPageImage) {
       bgPageImage.classList.add("hidden");
     }
@@ -398,7 +398,7 @@ document.addEventListener("DOMContentLoaded", function () {
         decoItem.classList.remove("hidden");
       });
     }
-  
+
     if (bgPageImage) {
       bgPageImage.classList.remove("hidden");
     }
@@ -488,22 +488,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  var swiper = new Swiper(".swiper_infoAboutEduOrg", {
-    loop: true,
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
+  var swiperInfoAboutEduOrg = new Swiper(".swiper_infoAboutEduOrg", {
     slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 20,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
+    spaceBetween: 50,
+    centeredSlides: true,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    on: {
+      init: function () {
+        this.slides.forEach((slide, index) => {
+          if (index !== this.activeIndex) {
+            slide.classList.add("opacity-25", "pointer-events-none");
+          }
+        });
+      },
+      slideChange: function () {
+        this.slides.forEach((slide, index) => {
+          if (index === this.activeIndex) {
+            slide.classList.remove("opacity-25", "pointer-events-none");
+          } else {
+            slide.classList.add("opacity-25", "pointer-events-none");
+          }
+        });
+      },
     },
   });
 

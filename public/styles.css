@@ -1078,6 +1078,10 @@ video {
   max-height: 400px;
 }
 
+.max-h-\[50px\]{
+  max-height: 50px;
+}
+
 .max-h-\[550px\]{
   max-height: 550px;
 }
@@ -1166,6 +1170,10 @@ video {
   max-width: 550px;
 }
 
+.max-w-\[60\%\]{
+  max-width: 60%;
+}
+
 .max-w-\[600px\]{
   max-width: 600px;
 }
@@ -1180,14 +1188,6 @@ video {
 
 .max-w-full{
   max-width: 100%;
-}
-
-.max-w-\[\]{
-  max-width: ;
-}
-
-.max-w-\[50\%\]{
-  max-width: 50%;
 }
 
 .flex-shrink{
@@ -2133,6 +2133,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2625,6 +2629,10 @@ video {
 .py-\[50px\]{
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.pb-\[100px\]{
+  padding-bottom: 100px;
 }
 
 .pb-\[200px\]{
@@ -3282,10 +3290,20 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-transform{
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-100{
+  transition-delay: 100ms;
 }
 
 .duration-200{
@@ -3842,8 +3860,16 @@ video {
     width: 80px;
   }
 
+  .xs\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .xs\:flex-col{
     flex-direction: column;
+  }
+
+  .xs\:gap-10{
+    gap: 2.5rem;
   }
 
   .xs\:object-right{
