@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Основная информация</title>
-    <link rel="stylesheet" href="./public/styles.css" />
-    <link rel="preload" as="image" href="./src/img/bcg-baseinfo.webp" />
+    <link rel="stylesheet" href="../public/styles.css" />
+    <link rel="preload" as="image" href="../src/img/bcg-baseinfo.webp" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
@@ -14,8 +14,8 @@
       defer
       src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
     ></script>
-    <script defer src="./scripts.js"></script>
-    <script defer src="./animations.js"></script>
+    <script defer src="../scripts.js"></script>
+    <script defer src="../animations.js"></script>
   </head>
   <body class="box-border bg-bg_color font-main tracking-[0px]">
     <main id="baseInfo__main" class="relative">
@@ -23,8 +23,8 @@
         class="absolute inset-0 -z-[1] bg-basic_color_3 bg-opacity-[60%]"
       ></div>
       <img
-        src="./src/img/bcg-baseinfo.webp"
-        alt="Bcg BaseInfo page"
+        src="../src/img/bcg-baseinfo.webp"
+        alt="Фото фона для страницы Основная информация"
         class="bgPageImage before: absolute -z-[2] h-full w-full object-cover object-center"
       />
       <header class="container mx-auto max-w-[1280px]">
@@ -123,11 +123,11 @@
           class="container z-[3] mx-auto flex max-w-[1280px] select-none items-center justify-between py-[25px] md:pb-[50px] xxs:px-0"
         >
           <!-- Logo -->
-          <a href="./index.html" class="z-[2] flex-shrink-0 select-none"
+          <a href="../index.html" class="z-[2] flex-shrink-0 select-none"
             ><img
               class="logoKGPK h-16 xs:h-[52px] 2xxs:h-[48px]"
-              src="./src/img/kg-logo.png"
-              alt="logo KGPK"
+              src="../src/img/kg-logo.png"
+              alt="Логотип КГПК"
           /></a>
           <div
             class="flex items-center gap-5 2md:gap-2 xxs:flex-wrap xxs:justify-end"
@@ -325,38 +325,38 @@
           <!-- Backgrounds for hyper menu -->
           <img
             id="bgMobile-navMobile"
-            src="src/img/hyperMenuBcgs/hyperMenu_navMobile.webp"
-            alt="hyperNavBcgMobile1"
+            src="../src/img/hyperMenuBcgs/hyperMenu_navMobile.webp"
+            alt="Фото фона hypermenu 1"
             class="bcgImage absolute z-[-2] h-full w-full object-cover object-center"
           />
           <img
             id="bgMobile-infoAboutEduOrg"
-            src="src/img/hyperMenuBcgs/hyperMenu_infoAboutEduOrg.webp"
-            alt="hyperNavBcgMobile2"
+            src="../src/img/hyperMenuBcgs/hyperMenu_infoAboutEduOrg.webp"
+            alt="Фото фона hypermenu 2"
             class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
           />
           <img
             id="bgMobile-toApplicant"
-            src="src/img/hyperMenuBcgs/hyperMenu_toApplicant.webp"
-            alt="hyperNavBcgMobile3"
+            src="../src/img/hyperMenuBcgs/hyperMenu_toApplicant.webp"
+            alt="Фото фона hypermenu 3"
             class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
           />
           <img
             id="bgMobile-forStudents"
-            src="src/img/hyperMenuBcgs/hyperMenu_forStudents.webp"
-            alt="hyperNavBcgMobile4"
+            src="../src/img/hyperMenuBcgs/hyperMenu_forStudents.webp"
+            alt="Фото фона hypermenu 4"
             class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
           />
           <img
             id="bgMobile-contacts"
-            src="src/img/hyperMenuBcgs/hyperMenu_contacts.webp"
-            alt="hyperNavBcgMobile5"
+            src="../src/img/hyperMenuBcgs/hyperMenu_contacts.webp"
+            alt="Фото фона hypermenu 5"
             class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
           />
           <img
             id="bgMobile-associations"
-            src="src/img/hyperMenuBcgs/hyperMenu_associations.webp"
-            alt="hyperNavBcgMobile6"
+            src="../src/img/hyperMenuBcgs/hyperMenu_associations.webp"
+            alt="Фото фона hypermenu 6"
             class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
           />
 
@@ -365,11 +365,11 @@
             class="container z-[2] mx-auto flex select-none items-center justify-between bg-basic_color_3 px-[15px] py-[25px]"
           >
             <!-- Logo -->
-            <a href="./index.html" class="z-[3] flex-shrink-0 select-none"
+            <a href="../index.html" class="z-[3] flex-shrink-0 select-none"
               ><img
                 class="logoKGPK h-16 xs:h-[52px] 2xxs:h-[48px]"
-                src="./src/img/kg-logo.png"
-                alt="logo KGPK"
+                src="../src/img/kg-logo.png"
+                alt="Логотип КГПК"
             /></a>
 
             <!-- Button Close Burger-menu -->
@@ -417,26 +417,12 @@
               <ul
                 class="navMenuMobile flex max-w-[500px] select-none flex-col justify-center gap-8 text-fluid_menu_section font-semibold text-text_color_secondary"
               >
-                <li class="navMenuMobile__btn">
+                <li>
                   <a
+                  href="./infoAboutEduOrganization.html"
                     id="hyperMenuMobileBtn_infoAboutEduOrg"
                     class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
                     >Сведения об образовательной организации
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 10 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="decoArrow inline-block"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
-                        fill="white"
-                      />
-                    </svg>
                   </a>
                 </li>
                 <li class="navMenuMobile__btn">
@@ -529,126 +515,6 @@
                 </li>
               </ul>
             </nav>
-
-            <!-- Content infoAboutEduOrg mobile -->
-            <div
-              id="mobileContent_infoAboutEduOrg"
-              class="mobileContent container hidden select-none py-[50px] text-[18px] text-text_color_secondary md:text-[16px]"
-            >
-              <a
-                id="btnToBack_infoAboutEduOrg"
-                class="outlineElement mx-auto inline-flex cursor-pointer items-center gap-1 rounded-3xl bg-white px-4 font-extrabold text-black"
-                ><svg
-                  class="h-[30px] w-[30px]"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 12h14M5 12l4-4m-4 4 4 4"
-                  />
-                </svg>
-
-                НАЗАД</a
-              >
-              <span
-                class="before: my-5 block h-[1px] w-full bg-element_color"
-              ></span>
-              <ul class="flex max-w-[550px] flex-col gap-6">
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="./baseInfo.html" class="font-bold"
-                    >Основные сведения</a
-                  >
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Документы</a>
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Образование</a>
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Структура и органы управления</a>
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Руководство и педагогический состав</a>
-                </li>
-
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Образовательные стандарты и требования</a>
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Стипендии и меры поддержки обучающихся</a>
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#"
-                    >Вакантные места для приема (перевода) обучающихся</a
-                  >
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Платные образовательные услуги</a>
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#"
-                    >Организация питания в образовательной организации</a
-                  >
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Меню горячего питания</a>
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#"
-                    >Материально-техническое обеспечение и оснащенность
-                    образовательного процесса</a
-                  >
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Международное сотрудничество</a>
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Финансово-хозяйственная деятельность</a>
-                </li>
-                <li
-                  class="transform transition duration-500 ease-in-out active:scale-110"
-                >
-                  <a href="#">Доступная среда</a>
-                </li>
-              </ul>
-            </div>
 
             <!-- Content toApplicant mobile -->
             <div
@@ -1004,7 +870,7 @@
               <ul class="flex max-w-[550px] flex-col gap-8">
                 <li>
                   <a
-                    href="./studActivity.html"
+                    href="../studActivity.html"
                     id="student_body_mobile"
                     class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
                     >Студенческий совет</a
@@ -1247,6 +1113,9 @@
                           >ВПРАВЕ.РФ. Государственная платформа бесплатной
                           юридической помощи Минюста России</a
                         >
+                      </li>
+                      <li>
+                        <a href="#">Меню горячего питания</a>
                       </li>
                       <li>
                         <a href="#"
@@ -1642,7 +1511,62 @@
         Основные сведения
       </h1>
     </main>
-    <section id="baseInfo__section1" class="py-[100px]">
+
+    <section id="infoAboutEduOrg__pathPanel" class="py-[50px]">
+      <div class="container mx-auto max-w-[1280px]">
+        <button
+          id="infoAboutEduOrgBtn"
+          aria-label="Open menu for page Info about education organization"
+          type="button"
+          class="outlineElement bg-basic_color_table_title p-[10px] w-full sm:block hidden"
+        >
+          <span
+            class="text-fluid_links font-semibold text-text_color_primary uppercase"
+          >
+            Разделы
+          </span>
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 10 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="decoArrow inline-block transition-transform duration-200 h-2 w-2"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+        <div id="infoAboutEduOrgMenu" class="sm:hidden block">
+          <ul class="grid grid-cols-3 xs:grid-cols-2 xxs:grid-cols-1 text-fluid_links text-text_color_primary gap-4 outlineElement">
+            <li><a class="hover:underline" href="./infoAboutEduOrganization.html">Сведения об образовательной организации</a></li>
+            <li><a class="font-bold hover:underline" href="./baseinfo.html">Основные сведения</a></li>
+            <li><a class="hover:underline" href="./structEduOrg.html">Структура и органы управления образовательной организацией</a></li>
+            <li><a class="hover:underline" href="./docs.html">Документы</a></li>
+            <li><a class="hover:underline" href="./education.html">Образование</a></li>
+            <li><a class="hover:underline" href="./eduStandardsReqs.html">Образовательные стандарты и требования</a></li>
+            <li><a class="hover:underline" href="./leadersOfEduOrg.html">Руководство. Педагогический (научно-педагогический) состав</a></li>
+            <li><a class="hover:underline" href="./materialTechSupportEduProcess.html">Материально-техническое обеспечение и оснащённость образовательного
+              процесса</a> 
+            </li>
+            <li><a class="hover:underline" href="./studentSupportMeasures.html">Стипендии и меры поддержки обучающихся</a></li>
+            <li><a class="hover:underline" href="./paidEduServices.html">Платные образовательные услуги</a></li>
+            <li><a class="hover:underline" href="./finEconomActiv.html">Финансово-хозяйственная деятельность</a></li>
+            <li><a class="hover:underline" href="./studentVacantPlaces.html">Вакантные места для приема (перевода) обучающихся</a></li>
+            <li><a class="hover:underline" href="./accessibleEnv.html">Доступная среда</a></li>
+            <li><a class="hover:underline" href="./intlCoop.html">Международное сотрудничество</a></li>
+            <li><a class="hover:underline" href="./eduNutritionOrg.html">Организация питания в образовательной организации</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="baseInfo__section1" class="pb-[100px]">
       <div class="container flex max-w-[1280px] flex-col gap-[50px]">
         <div
           class="outlineElement flex max-w-[1000px] flex-col gap-[10px] text-text_color_primary"
@@ -1664,7 +1588,7 @@
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="black"
-            class="h-[100px] w-[100px] md:hidden xs:h-[80px] xs:w-[80px]"
+            class="h-[90px] w-[90px] md:hidden xs:h-[70px] xs:w-[70px]"
           >
             <path
               stroke-linecap="round"
@@ -1790,7 +1714,7 @@
             viewBox="0 0 24 24"
             stroke-width="1"
             stroke="currentColor"
-            class="h-[100px] w-[100px] md:hidden xs:h-[80px] xs:w-[80px]"
+            class="h-[90px] w-[90px] md:hidden xs:h-[70px] xs:w-[70px]"
           >
             <path
               stroke-linecap="round"
@@ -1816,7 +1740,7 @@
           График работы структурных подразделений ОБПОУ «КГПК»
         </h3>
         <div
-          class="mx-auto grid grid-cols-4 items-center gap-4 py-[50px] text-text_color_secondary lg:max-w-[600px] lg:grid-cols-1"
+          class="mx-auto grid grid-cols-4 items-center gap-4 pt-[50px] text-text_color_secondary lg:max-w-[600px] lg:grid-cols-1"
         >
           <!-- Card 1 -->
 
@@ -1895,6 +1819,23 @@
       </div>
     </section>
 
+    <section id="baseInfo__section5" class="py-[50px]"></section>
+      <div class="container max-w-[1280px]">
+        <div class="flex flex-col gap-[10px]">
+          <h3
+            class="text-fluid_title font-semibold text-text_color_primary"
+          >
+          Информация о контактных телефонах и адресах электронной почты образовательной организации:
+          </h3>
+          <ul class="outlineElement text-fluid font-normal leading-normal text-text_color_primary flex flex-col gap-4">
+            <li>Контактный телефон: +7 (4712) 37-02-19</li>
+            <li>Факс: +7 (4712) 37-02-19</li>
+            <li>Адрес электронной почты: kgkptuip@mail.ru</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- Section table 1 -->
 
     <section id="baseInfo__sectionTable1" class="py-[50px]">
@@ -1903,7 +1844,7 @@
           <h3
             class="text-fluid_title font-semibold text-text_color_primary"
           >
-            Информация о режиме и графике работы образовательной организации
+          Информация о филиалах образовательной организации (в том числе находящихся за пределами Российской Федерации):
           </h3>
 
           <div
@@ -1952,56 +1893,7 @@
         </div>
       </div>
     </section>
-
-    <!-- Section table 2 -->
-
-    <section id="baseInfo__sectionTable2" class="py-[50px]">
-      <div class="container max-w-[1280px]">
-        <div class="flex flex-col gap-[50px]">
-          <h3
-            class="text-fluid_title font-semibold text-text_color_primary"
-          >
-            Информация о представительствах образовательной организации (в том
-            числе находящихся за пределами Российской Федерации)
-          </h3>
-
-          <div
-            class="outlineElement relative overflow-x-auto scrollbar scrollbar-track-transparent scrollbar-thumb-element_color"
-          >
-            <table class="w-full text-left text-fluid text-text_color_primary">
-              <thead
-                class="outlineElement bg-basic_color_table_title font-semibold"
-              >
-                <tr>
-                  <th scope="col" class="px-6 py-3">№</th>
-                  <th scope="col" class="px-6 py-3">
-                    Наименование представительства
-                  </th>
-                  <th scope="col" class="px-6 py-3">Адрес места нахождения</th>
-                  <th scope="col" class="px-6 py-3">Режим и график работы</th>
-                  <th scope="col" class="px-6 py-3">Контактные телефоны</th>
-                  <th scope="col" class="px-6 py-3">Адрес электронной почты</th>
-                  <th scope="col" class="px-6 py-3">
-                    Адрес сайта учредителя(ей)
-                  </th>
-                </tr>
-              </thead>
-              <tbody class="border-b bg-basic_color_table_body font-medium">
-                <tr>
-                  <th scope="row" class="px-6 py-4 font-semibold">1</th>
-                  <td class="px-6 py-4">Отсутствует</td>
-                  <td class="px-6 py-4">Отсутствует</td>
-                  <td class="px-6 py-4">Отсутствует</td>
-                  <td class="px-6 py-4">Отсутствует</td>
-                  <td class="px-6 py-4">Отсутствует</td>
-                  <td class="px-6 py-4">Отсутствует</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- Section table 3 -->
 
@@ -2129,7 +2021,13 @@
       </div>
     </section>
 
-    <!-- Section between table 1 -->
+     <!-- Section between table 1 -->
+      
+    <div class="container max-w-[1280px]">
+      <h3 class="text-fluid_title font-semibold text-text_color_primary">
+        Информация о местах осуществления образовательной деятельности, сведения о которых в соответствии с Федеральным законом N 273-ФЗ не включаются в соответствующую запись в реестре лицензий на осуществление образовательной деятельности, перечисленных в Правилах размещения на официальном сайте образовательной организации в информационно-телекоммуникационной сети "Интернет" и обновления информации об образовательной организации, утвержденных постановлением Правительства Российской Федерации от 20 октября 2021 г. N 1802, в виде адреса места нахождения:
+      </h3>
+    </div>
 
     <section id="baseInfo_sectionBetwTable1" class="py-[50px]">
       <div class="container max-w-[1280px]">

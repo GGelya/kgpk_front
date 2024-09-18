@@ -488,11 +488,39 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  var swiperInfoAboutEduOrg = new Swiper(".swiper_infoAboutEduOrg", {
+  // infoAboutEduOrg navigation 
+
+  const infoAboutEduOrgBtn = document.getElementById("infoAboutEduOrgBtn");
+  const infoAboutEduOrgMenu = document.getElementById("infoAboutEduOrgMenu");
+
+  if (infoAboutEduOrgBtn){
+    infoAboutEduOrgBtn.addEventListener("click", () => {
+      infoAboutEduOrgMenu.classList.toggle("sm:hidden");
+      infoAboutEduOrgMenu.classList.toggle("bg-basic_color_table_body");
+      infoAboutEduOrgMenu.classList.toggle("p-4");
+      infoAboutEduOrgBtn.classList.toggle("drop-shadow-md");
+      infoAboutEduOrgBtn.querySelector(".decoArrow").classList.toggle("rotate-90");
+    });
+  }
+
+  // swipers 
+
+  function initSwiper(selector, options) {
+    if (document.querySelector(selector)) {
+      return new Swiper(selector, options);
+    }
+    return null;
+  }
+
+  var swiperInfoAboutEduOrg = initSwiper(".swiper_infoAboutEduOrg", {
     slidesPerView: "auto",
-    spaceBetween: 50,
+    spaceBetween: 40,
     centeredSlides: true,
     grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
     keyboard: {
       enabled: true,
     },
@@ -516,9 +544,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // Swiper
-
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = initSwiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,

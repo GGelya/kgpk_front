@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студенческий совет</title>
-    <link rel="stylesheet" href="./public/styles.css" />
-    <link rel="preload" as="image" href="./src/img/bcg-studActivity.webp" />
+    <title>Доступная среда</title>
+    <link rel="stylesheet" href="../public/styles.css" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
@@ -14,26 +13,14 @@
       defer
       src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
     ></script>
-    <script defer src="./scripts.js"></script>
-    <script defer src="./animations.js"></script>
+    <script defer src="../scripts.js"></script>
   </head>
   <body class="box-border bg-bg_color font-main tracking-[0px]">
-    <section
-      id="studActivity__main"
-      class="relative"
-    >
-      <div
-        class="absolute inset-0 -z-[1] bg-basic_color_3 bg-opacity-[60%]"
-      ></div>
-      <img
-        src="./src/img/bcg-studActivity.webp"
-        alt="Фото фона для страницы Студенческий совет"
-        class="bgPageImage before: absolute -z-[2] h-full w-full object-cover object-center"
-      />
-      <header class="container mx-auto max-w-[1280px]">
+    <section>
+      <header class="container mx-auto bg-basic_color_1">
         <div
           id="visionImpairedPanel"
-          class="hidden w-full bg-gray-100 p-4 outline outline-element_color transition duration-300"
+          class="hidden w-full bg-gray-100 p-4 outline outline-element_color transition duration-300 max-w-[1280px] mx-auto"
         >
           <div
             class="flex justify-center gap-16 md:gap-14 sm:flex-col sm:gap-5"
@@ -126,11 +113,11 @@
           class="container z-[3] mx-auto flex max-w-[1280px] select-none items-center justify-between py-[25px] md:pb-[50px] xxs:px-0"
         >
           <!-- Logo -->
-          <a href="./index.html" class="z-[2] flex-shrink-0 select-none"
+          <a href="../index.html" class="z-[2] flex-shrink-0 select-none"
             ><img
               class="logoKGPK h-16 xs:h-[52px] 2xxs:h-[48px]"
-              src="./src/img/kg-logo.png"
-              alt="Лого КГПК"
+              src="../src/img/kg-logo.png"
+              alt="Логотип КГПК"
           /></a>
           <div
             class="flex items-center gap-5 2md:gap-2 xxs:flex-wrap xxs:justify-end"
@@ -328,37 +315,37 @@
           <!-- Backgrounds for hyper menu -->
           <img
             id="bgMobile-navMobile"
-            src="src/img/hyperMenuBcgs/hyperMenu_navMobile.webp"
+            src="../src/img/hyperMenuBcgs/hyperMenu_navMobile.webp"
             alt="Фото фона hypermenu 1"
             class="bcgImage absolute z-[-2] h-full w-full object-cover object-center"
           />
           <img
             id="bgMobile-infoAboutEduOrg"
-            src="src/img/hyperMenuBcgs/hyperMenu_infoAboutEduOrg.webp"
+            src="../src/img/hyperMenuBcgs/hyperMenu_infoAboutEduOrg.webp"
             alt="Фото фона hypermenu 2"
             class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
           />
           <img
             id="bgMobile-toApplicant"
-            src="src/img/hyperMenuBcgs/hyperMenu_toApplicant.webp"
+            src="../src/img/hyperMenuBcgs/hyperMenu_toApplicant.webp"
             alt="Фото фона hypermenu 3"
             class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
           />
           <img
             id="bgMobile-forStudents"
-            src="src/img/hyperMenuBcgs/hyperMenu_forStudents.webp"
+            src="../src/img/hyperMenuBcgs/hyperMenu_forStudents.webp"
             alt="Фото фона hypermenu 4"
             class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
           />
           <img
             id="bgMobile-contacts"
-            src="src/img/hyperMenuBcgs/hyperMenu_contacts.webp"
+            src="../src/img/hyperMenuBcgs/hyperMenu_contacts.webp"
             alt="Фото фона hypermenu 5"
             class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
           />
           <img
             id="bgMobile-associations"
-            src="src/img/hyperMenuBcgs/hyperMenu_associations.webp"
+            src="../src/img/hyperMenuBcgs/hyperMenu_associations.webp"
             alt="Фото фона hypermenu 6"
             class="bcgImage absolute z-[-2] hidden h-full w-full object-cover object-center"
           />
@@ -368,10 +355,10 @@
             class="container z-[2] mx-auto flex select-none items-center justify-between bg-basic_color_3 px-[15px] py-[25px]"
           >
             <!-- Logo -->
-            <a href="./index.html" class="z-[3] flex-shrink-0 select-none"
+            <a href="../index.html" class="z-[3] flex-shrink-0 select-none"
               ><img
                 class="logoKGPK h-16 xs:h-[52px] 2xxs:h-[48px]"
-                src="./src/img/kg-logo.png"
+                src="../src/img/kg-logo.png"
                 alt="Логотип КГПК"
             /></a>
 
@@ -873,7 +860,7 @@
               <ul class="flex max-w-[550px] flex-col gap-8">
                 <li>
                   <a
-                    href="./studActivity.html"
+                    href="../studActivity.html"
                     id="student_body_mobile"
                     class="section_mobile inline-block transform cursor-pointer items-center font-bold transition duration-500 ease-in-out active:scale-x-110"
                     >Студенческий совет</a
@@ -1509,387 +1496,131 @@
         </nav>
       </header>
       <h1
-        class="outlineElement studAct_title container max-w-[1280px] pb-[200px] pt-[200px] text-fluid_title font-bold text-text_color_secondary xs:pb-[100px] xs:pt-[350px]"
+        class="container max-w-[1280px] pt-[50px] text-center text-text_color_primary text-fluid_title font-bold"
       >
-        Студенческий совет
+      Доступная среда
       </h1>
     </section>
-    <section id="studActivity__section1" class="py-[100px] xs:py-[50px]">
-      <div class="container max-w-[1280px]">
-        <h2
-          class="studActS1_title text-text_color_primary text-fluid_title font-bold"
+
+    <section id="infoAboutEduOrg__pathPanel" class="pt-[50px]">
+      <div class="container mx-auto max-w-[1280px]">
+        <button
+          id="infoAboutEduOrgBtn"
+          aria-label="Open menu for page Info about education organization"
+          type="button"
+          class="outlineElement bg-basic_color_table_title p-[10px] w-full sm:block hidden"
         >
-          Если ты активный, креативный, продуктивный, заряженный и весёлый, то
-          тебя ждёт лучший Студенческий совет!
-        </h2>
-        <span
-          class="studActivityS1_decoLine before: absolute -z-[1] mt-10 block h-[88%] min-h-[400px] w-[1px] bg-black"
-        ></span>
-
-        <div
-          class="mx-auto flex max-w-[1100px] flex-col gap-[100px] pt-[100px] xs:pt-[50px] overflow-hidden"
-        >
-          <div class="studActS1_block1 relative flex items-center gap-10 2lg:flex-col -z-[2]">
-            <img
-              loading="lazy"
-              src="./src/img/studActivityPhoto1.webp"
-              alt="studActivityPhoto1"
-              class="max-h-[300px] md:max-h-[230px] sm:max-h-[200px]"
-            />
-            <div class="flex flex-col gap-10 outlineElement">
-              <p
-                class="text-text_color_primary text-fluid_title_type2 font-normal 2lg:text-center lg:mx-auto lg:max-w-[500px] sm:max-w-[350px]"
-              >
-                Ты хочешь быть в центре событий 24/7?
-              </p>
-              <p
-                class="text-text_color_primary text-fluid_title_type2 font-normal 2lg:text-center lg:mx-auto lg:max-w-[500px] sm:max-w-[350px]"
-              >
-                Хочешь быть лидером и развивать ключевые компетенции?
-              </p>
-            </div>
-          </div>
-
-          <div class="studActS1_block2 relative flex items-center gap-10 2lg:flex-col -z-[2]">
-            <img
-              loading="lazy"
-              src="./src/img/studActivityPhoto2.webp"
-              alt="studActivityPhoto2"
-              class="hidden max-h-[300px] 2lg:block md:max-h-[230px] sm:max-h-[200px]"
-            />
-            <div class="flex flex-col gap-10 text-right outlineElement">
-              <p
-                class="text-text_color_primary text-fluid_title_type2 font-normal 2lg:text-center lg:mx-auto lg:max-w-[500px] sm:max-w-[350px]"
-              >
-                Стать организатором крупных мероприятий?
-              </p>
-              <p
-                class="text-text_color_primary text-fluid_title_type2 font-normal 2lg:text-center lg:mx-auto lg:max-w-[500px] sm:max-w-[350px]"
-              >
-                Заниматься волонтёрской деятельностью?
-              </p>
-            </div>
-            <img
-              loading="lazy"
-              src="./src/img/studActivityPhoto2.webp"
-              alt="studActivityPhoto2"
-              class="max-h-[300px] 2lg:hidden md:max-h-[230px] sm:max-h-[200px]"
-            />
-          </div>
-
-          <div class="studActS1_block3 relative flex items-center gap-10 2lg:flex-col -z-[2]">
-            <img
-              loading="lazy"
-              src="./src/img/studActivityPhoto3.webp"
-              alt="studActivityPhoto3"
-              class="max-h-[300px] md:max-h-[230px] sm:max-h-[200px]"
-            />
-            <div class="flex flex-col gap-10 outlineElement">
-              <p
-                class="text-text_color_primary text-fluid_title_type2 font-normal 2lg:text-center lg:mx-auto lg:max-w-[500px] sm:max-w-[350px]"
-              >
-                Работать в Пресс-центре «Траектория»?
-              </p>
-              <p
-                class="text-text_color_primary text-fluid_title_type2 font-normal 2lg:text-center lg:mx-auto lg:max-w-[500px] sm:max-w-[350px]"
-              >
-                Навсегда запомнить эту крутую студенческую жизнь?
-              </p>
-            </div>
-          </div>
-        </div>
-        <h2
-          class="pt-[100px] text-center text-text_color_primary text-fluid_title font-bold xs:pt-[50px]"
-        >
-          Мы ждем именно тебя!
-        </h2>
-      </div>
-    </section>
-
-    <section
-      id="studActivity__section2"
-      class="bg-basic_color_1 py-[100px] xs:py-[50px]"
-    >
-      <div class="container max-w-[1280px]">
-        <div class="flex flex-col gap-20">
-          <h2
-            class="text-fluid_title font-semibold italic text-text_color_secondary"
+          <span
+            class="text-fluid_links font-semibold text-text_color_primary uppercase"
           >
-            Студенческий совет – это зона роста и самореализации!
-          </h2>
-          <h2
-            class="text-right text-fluid_title font-semibold italic text-text_color_secondary"
+            Разделы
+          </span>
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 10 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="decoArrow inline-block transition-transform duration-200 h-2 w-2"
           >
-            Студенческий совет – это инструмент, влияющий на жизнь колледжа!
-          </h2>
-          <h2
-            class="text-fluid_title font-semibold italic text-text_color_secondary"
-          >
-            Студенческий совет – это большие возможности и выход из зоны
-            комфорта!
-          </h2>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.43973 14.5603C0.158171 14.2786 0 13.8967 0 13.4984C0 13.1002 0.158171 12.7183 0.43973 12.4366L5.38541 7.49093L0.43973 2.54525C0.16615 2.26199 0.014769 1.88261 0.018191 1.48883C0.0216129 1.09504 0.179564 0.71835 0.458024 0.43989C0.736485 0.16143 1.11317 0.00347868 1.50696 5.67747e-05C1.90075 -0.00336513 2.28013 0.148016 2.56338 0.421595L8.57089 6.42911C8.85245 6.71075 9.01062 7.09269 9.01062 7.49093C9.01062 7.88918 8.85245 8.27112 8.57089 8.55276L2.56338 14.5603C2.28174 14.8418 1.8998 15 1.50156 15C1.10331 15 0.721373 14.8418 0.43973 14.5603Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+        <div id="infoAboutEduOrgMenu" class="sm:hidden block">
+          <ul class="grid grid-cols-3 xs:grid-cols-2 xxs:grid-cols-1 text-fluid_links text-text_color_primary gap-4 outlineElement">
+            <li><a class="hover:underline" href="./infoAboutEduOrganization.html">Сведения об образовательной организации</a></li>
+            <li><a class="hover:underline" href="./baseinfo.html">Основные сведения</a></li>
+            <li><a class="hover:underline" href="./structEduOrg.html">Структура и органы управления образовательной организацией</a></li>
+            <li><a class="hover:underline" href="./docs.html">Документы</a></li>
+            <li><a class="hover:underline" href="./education.html">Образование</a></li>
+            <li><a class="hover:underline" href="./eduStandardsReqs.html">Образовательные стандарты и требования</a></li>
+            <li><a class="hover:underline" href="./leadersOfEduOrg.html">Руководство. Педагогический (научно-педагогический) состав</a></li>
+            <li><a class="hover:underline" href="./materialTechSupportEduProcess.html">Материально-техническое обеспечение и оснащённость образовательного
+              процесса</a> 
+            </li>
+            <li><a class="hover:underline" href="./studentSupportMeasures.html">Стипендии и меры поддержки обучающихся</a></li>
+            <li><a class="hover:underline" href="./paidEduServices.html">Платные образовательные услуги</a></li>
+            <li><a class="hover:underline" href="./finEconomActiv.html">Финансово-хозяйственная деятельность</a></li>
+            <li><a class="hover:underline" href="./studentVacantPlaces.html">Вакантные места для приема (перевода) обучающихся</a></li>
+            <li><a class="font-bold hover:underline" href="./accessibleEnv.html">Доступная среда</a></li>
+            <li><a class="hover:underline" href="./intlCoop.html">Международное сотрудничество</a></li>
+            <li><a class="hover:underline" href="./eduNutritionOrg.html">Организация питания в образовательной организации</a></li>
+          </ul>
         </div>
       </div>
+      
     </section>
 
-    <section id="studActivity__section3" class="py-[100px] xs:py-[50px]">
+    <!-- Секция с тектом  -->
+
+    <section class="pt-[50px]">
       <div class="container max-w-[1280px]">
-        <p
-          class="text-fluid font-normal leading-normal text-text_color_primary outlineElement"
-        >
-          То, каким будет ваш завтрашний день – зависит только от вас! Именно
-          поэтому каждый активный студент нашего колледжа может построить свой
-          мир, раскрываться и находить свой жизненный путь через все ресурсы и
-          возможности Курского государственного политехнического колледжа – это
-          основная цель работы Студенческого совета.
-        </p>
-
-        <div class="h-[700px] pt-[100px] xs:h-[450px] xs:pt-[50px]">
-          <img
-            loading="lazy"
-            src="src/img/studActivityPhoto4.webp"
-            alt="studActivityPhoto4"
-            class="h-full w-full object-cover object-center xs:object-right"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section id="studActivity__section4" class="">
-      <div class="container max-w-[1280px]">
-        <h2
-          class="text-fluid_title text-text_color_primary font-bold 2lg:text-[32px] lg:text-[28px] 2md:text-[35px] md:text-[30px] xs:text-[28px] xxs:break-all xxs:text-[24px] 2xxs:text-[20px]"
-        >
-          Основные задачи студенческого совета
-        </h2>
-        <ul
-          class="flex flex-col gap-3 pt-[50px] text-fluid text-text_color_primary font-normal"
-        >
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Содействие приобретению студентами навыков общественной активности и
-            социального проектирования (навыков Softskills)
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Повышение уровня информированности студентов
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Выработка практических навыков межличностного общения, необходимых в
-            профессиональной деятельности
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Создание условий для приобретения студентами опыта успешного участия
-            в общественной жизни, гражданских инициативах, социально значимых
-            проектах
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Развитие диалога и взаимопонимания между участниками
-            образовательного процесса по решению проблем студенческой жизни
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Формирование творческого подхода к труду, самосовершенствованию в
-            избранной специальности/профессии
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Создание условий для формирования педагогически организованного
-            студенческого сообщества
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Внедрение в практику работы новых форм взаимодействия (тренинги,
-            нетворкинг, форсайт-сессии и т.д.)
-          </li>
-        </ul>
-
-        <div class="flex flex-col gap-5 pt-[50px] outlineElement">
+        <div class="flex flex-col gap-[10px] outlineElement">
+          <h3
+            class="text-fluid_title text-text_color_primary font-semibold"
+          >
+            Paragraph name
+          </h3>
           <p
             class="text-fluid text-text_color_primary font-normal leading-normal"
           >
-            Студенческий совет строит свои взаимоотношения на основе
-            равноправного партнерства: содружества, сотворчества, соавторства.
-          </p>
-          <p
-            class="text-fluid text-text_color_primary font-normal leading-normal"
-          >
-            Работой студенческого совета руководит председатель, который
-            избирается на студенческом форуме открытым голосованием.
-          </p>
-          <p
-            class="text-fluid text-text_color_primary font-semibold leading-normal"
-          >
-            В 2024 году председателем студенческого совета избрана студентка
-            группы ЛС-34 Иванова Софья Сергеевна.
+            Text
           </p>
         </div>
       </div>
     </section>
 
-    <section id="studActivity__section5" class="pt-[100px] xs:pt-[50px]">
+    <!-- Секция с таблицей (если имеется) -->
+
+    <section class="py-[50px]">
       <div class="container max-w-[1280px]">
-        <h2
-          class="text-fluid_title font-bold text-text_color_primary"
-        >
-          Структура cтуденческого совета
-        </h2>
-        <div
-          class="mx-auto grid grid-cols-2 gap-10 py-[50px] 2md:gap-5 sm:max-w-[500px] sm:grid-cols-1"
-        >
-          <div
-            class=" outlineElement flex flex-col gap-5 rounded-2xl bg-basic_color_1 p-10 text-fluid font-normal text-text_color_secondary md:p-5"
+        <div class="flex flex-col gap-[50px]">
+          <h3
+            class="text-fluid_title text-text_color_primary font-semibold"
           >
-            <h4 class="font-semibold">Председатель, помощник советника</h4>
-            <p>Иванова Софья Сергеевна</p>
-          </div>
-          <div
-            class=" outlineElement flex flex-col gap-5 rounded-2xl bg-basic_color_1 p-10 text-fluid font-normal text-text_color_secondary md:p-5"
-          >
-            <h4 class="font-semibold">
-              Заместитель председателя по внутреннему взаимодействию
-            </h4>
-            <p>Левков Станислав Алексеевич</p>
-          </div>
-          <div
-            class=" outlineElement flex flex-col gap-5 rounded-2xl bg-basic_color_1 p-10 text-fluid font-normal text-text_color_secondary md:p-5"
-          >
-            <h4 class="font-semibold">Связь с РДДМ</h4>
-            <p>Евдокимов Евгений Александрович</p>
-          </div>
-          <div
-            class=" outlineElement flex flex-col gap-5 rounded-2xl bg-basic_color_1 p-10 text-fluid font-normal text-text_color_secondary md:p-5"
-          >
-            <h4 class="font-semibold">Связь с общественными структурами</h4>
-            <p>Зубкова Софья Александровна</p>
-          </div>
-          <div
-            class=" outlineElement flex flex-col gap-5 rounded-2xl bg-basic_color_1 p-10 text-fluid font-normal text-text_color_secondary md:p-5"
-          >
-            <h4 class="font-semibold">Медиа сообщество Студенческого Совета</h4>
-            <p>Шумакова Яна Романовна</p>
-          </div>
-          <div
-            class=" outlineElement flex flex-col gap-5 rounded-2xl bg-basic_color_1 p-10 text-fluid font-normal text-text_color_secondary md:p-5"
-          >
-            <h4 class="font-semibold">
-              Заместитель председателя по реализации направлений Студенческого
-              Совета
-            </h4>
-            <p>Антипова Ольга Андреевна</p>
-          </div>
-          <div
-            class=" outlineElement flex flex-col gap-5 rounded-2xl bg-basic_color_1 p-10 text-fluid font-normal text-text_color_secondary md:p-5"
-          >
-            <h4 class="font-semibold">Спортивные направления</h4>
-            <p>Яхьяев Расим Ромин Оглы</p>
-          </div>
-          <div
-            class=" outlineElement flex flex-col gap-5 rounded-2xl bg-basic_color_1 p-10 text-fluid font-normal text-text_color_secondary md:p-5"
-          >
-            <h4 class="font-semibold">Волонтерство</h4>
-            <p>Ковалева Эвелина Андреевна</p>
-          </div>
-          <div
-            class=" outlineElement col-span-2 flex flex-col gap-5 rounded-2xl bg-basic_color_1 p-10 text-fluid font-normal text-text_color_secondary md:p-5 sm:col-span-1"
-          >
-            <h4 class="font-semibold">
-              Внутренние мероприятия (Дни рождения, памятные даты)
-            </h4>
-            <p>Мирошниченко Кристина Дмитриевна</p>
+            Table name
+          </h3>
+
+          <div class="relative overflow-x-auto scrollbar scrollbar-track-transparent scrollbar-thumb-element_color outlineElement">
+            <table class="w-full text-left text-text_color_primary text-fluid">
+              <thead
+                class="bg-basic_color_table_title font-semibold outlineElement"
+              >
+                <tr>
+                  <th scope="col" class="px-6 py-3">№</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                  <th scope="col" class="px-6 py-3">Name col</th>
+                </tr>
+              </thead>
+              <tbody
+                class="border-b bg-basic_color_table_body font-medium"
+              >
+                <tr>
+                  <th scope="row" class="px-6 py-4 font-semibold">1</th>
+                  <td class="px-6 py-4">content</td>
+                  <td class="px-6 py-4">content</td>
+                  <td class="px-6 py-4">content</td>
+                  <td class="px-6 py-4">content</td>
+                  <td class="px-6 py-4">content</td>
+                  <td class="px-6 py-4">content</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div
-          class="mx-auto flex max-w-[900px] items-center gap-4 xs:flex-col xs:text-center outlineElement"
-        >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="black" class="h-[100px] w-[100px] xs:h-[80px] xs:w-[80px]">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-        </svg>
-        
-          <p class="text-fluid text-text_color_primary font-semibold">
-            Заседания студенческого совета проводятся в учебном корпусе №1 (ул.
-            Народная, 8).
-          </p>
-        </div>
-        <p
-          class="mx-auto max-w-[900px] pt-[50px] text-center text-fluid text-text_color_primary font-semibold outlineElement"
-        >
-          Курирует работу студенческого совета колледжа
-          педагог-организатор Орлова Ольга Андреевна.
-        </p>
-        <p
-          class="pt-[50px] text-fluid text-text_color_primary font-normal outlineElement"
-        >
-          Председатель студенческого совета, заместители председателя
-          Студенческого Совета, а также их помощники являются членами
-          коллегиального органа управления колледжа – педагогического совета
-          колледжа, где имеют возможность принимать решения наравне с
-          педагогическим коллективом, что дает дополнительные возможности
-          студентам решить насущные вопросы студенческой жизни, в том числе
-          предлагать свои программы, требующие первоочередного финансирования
-          или прямой помощи администрации, служб колледжа.
-        </p>
       </div>
     </section>
 
-    <section id="studActivity__section6" class="pt-[50px]">
-      <div class="container max-w-[1280px]">
-        <p
-          class="text-fluid text-text_color_primary font-medium italic outlineElement"
-        >
-          Студенческий совет колледжа является организатором и участником
-          семинаров, конференций, круглых столов по распространению лучших
-          практик среди профессиональных образовательных организаций города и
-          области, а также работает в различных направлениях:
-        </p>
-        <ul
-          class="flex flex-col gap-3 pt-[50px] text-fluid text-text_color_primary font-normal"
-        >
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Инновации и стартапы
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Вовлечение молодежи в волонтерскую и творческую деятельность
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Патриотическое воспитание молодежи
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Популяризация культуры безопасности и здорового образа жизни
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Развитие молодежного самоуправления
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Поддержка и взаимодействие с общественными организациями и
-            движениями
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Привлечение молодежи к работе в средствах массовой информации
-          </li>
-          <li class="rounded-xl bg-basic_color_1 bg-opacity-20 p-5 outlineElement">
-            Социализация молодежи, нуждающейся в особой заботе государства
-          </li>
-        </ul>
-        <div class="h-[700px] py-[50px] xs:h-[450px]">
-          <img
-            loading="lazy"
-            src="src/img/studActivityPhoto5.webp"
-            alt="studActivityPhoto4"
-            class="h-full w-full object-cover object-center xs:object-right"
-          />
-        </div>
-        <p
-          class="pb-[50px] text-fluid text-text_color_primary font-normal outlineElement"
-        >
-          Наиболее полно эффективность студенческого самоуправления
-          характеризует критерий социализации студентов и выпускников, прошедших
-          "через" студенческое самоуправление. Знания и опыт, полученные в
-          студенческом самоуправлении, делают выпускников мобильными,
-          востребованными в области государственного управления,
-          административно-хозяйственной работы, в политике и других областях
-          социально значимой деятельности.
-        </p>
-      </div>
-    </section>
-
-    <footer class="outlineElement bg-basic_color_3">
+    <footer class="outlineElement bg-basic_color_3 w-full">
       <div class="container relative max-w-[1280px]">
         <ul
           class="flex items-center justify-between gap-7 py-[15px] text-fluid_links font-light text-text_color_secondary sm:flex-col sm:text-center"
