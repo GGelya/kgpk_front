@@ -133,6 +133,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const visionImpairedPanel = document.getElementById("visionImpairedPanel");
   const logo = document.querySelectorAll(".logoKGPK");
 
+  const logoFileNames = {
+    ver1: "kg-logo(black).png",
+    ver2: "kg-logo.png",
+  };
+
   function updateBreakAllClass() {
     const fontSizeMode = localStorage.getItem("fontSizeMode") || "lv1";
     const trackingMode =
@@ -166,11 +171,9 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   function checkColorTheme(theme) {
-    const color = theme === "ver1" ? "black" : "white";
-    const logoSrc =
-      theme === "ver1"
-        ? "./src/img/kg-logo(black).png"
-        : "./src/img/kg-logo.png";
+    const color = theme === "ver1"? "black" : "white";
+  const logoSrc = `/src/img/${logoFileNames[theme]}`;
+
 
     document.querySelectorAll("svg").forEach((icons) => {
       icons.setAttribute("stroke", color);
@@ -416,7 +419,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     logo.forEach((logos) => {
-      logos.setAttribute("src", "./src/img/kg-logo.png");
+      logos.setAttribute("src", `/src/img/${logoFileNames["ver2"]}`);
     });
 
     document.querySelectorAll("svg").forEach((icon) => {
