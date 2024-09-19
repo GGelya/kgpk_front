@@ -49,7 +49,7 @@ module.exports = {
         fluid_links: 'var(--fluid_links)',
       },
       fontFamily: {
-        main: ['Montserrat'],
+        main: ['Montserrat', 'sans-serif'],
       },
       display: ['group-hover', 'group-active'],
       visibility: ['group-hover', 'group-active'],

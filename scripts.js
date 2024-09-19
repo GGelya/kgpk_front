@@ -51,11 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
         `.section__content_mobile-${contentId}`,
       );
 
-      if (!content) {
-        console.error(`Content not found for section ID: ${contentId}`);
-        return;
-      }
-
       const decoArrow = section.querySelector(".decoArrow");
 
       if (!content.classList.contains("hidden")) {
@@ -172,8 +167,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function checkColorTheme(theme) {
     const color = theme === "ver1"? "black" : "white";
-  const logoSrc = `/src/img/${logoFileNames[theme]}`;
-
+    const logoSrc = `${window.location.origin}/src/img/${logoFileNames[theme]}`;
+    
 
     document.querySelectorAll("svg").forEach((icons) => {
       icons.setAttribute("stroke", color);
