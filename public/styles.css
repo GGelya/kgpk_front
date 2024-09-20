@@ -2402,10 +2402,6 @@ video {
   --tw-bg-opacity: 95%;
 }
 
-.bg-opacity-25 {
-  --tw-bg-opacity: 0.25;
-}
-
 .bg-bg_studentBody {
   background-image: url('../src/img/studentBodyPhoto.webp');
 }
@@ -3353,8 +3349,8 @@ video {
   transition-duration: 150ms;
 }
 
-.delay-100 {
-  transition-delay: 100ms;
+.duration-100 {
+  transition-duration: 100ms;
 }
 
 .duration-200 {
@@ -3367,10 +3363,6 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.duration-100 {
-  transition-duration: 100ms;
 }
 
 .ease-in {
