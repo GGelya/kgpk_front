@@ -1,26 +1,6 @@
-/* main font */
-
-@font-face {
-  font-family: 'Montserrat';
-
-  src: url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-
-  font-weight: 100 900;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-
-  src: url('./fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-
-  font-weight: 100 900;
-
-  font-style: italic;
-}
-
-/* ! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com */
+/*
+! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -463,6 +443,26 @@ video {
 * {
   scrollbar-color: initial;
   scrollbar-width: initial;
+}
+
+@font-face {
+  font-family: "Montserrat";
+
+  src: url("../src/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+
+  font-weight: 100 900;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+
+  src: url("../src/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+
+  font-weight: 100 900;
+
+  font-style: italic;
 }
 
 :root {
@@ -919,10 +919,6 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .mt-10 {
@@ -2406,6 +2402,10 @@ video {
   --tw-bg-opacity: 95%;
 }
 
+.bg-opacity-25 {
+  --tw-bg-opacity: 0.25;
+}
+
 .bg-bg_studentBody {
   background-image: url('../src/img/studentBodyPhoto.webp');
 }
@@ -3369,6 +3369,10 @@ video {
   transition-duration: 500ms;
 }
 
+.duration-100 {
+  transition-duration: 100ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -3865,10 +3869,6 @@ video {
 }
 
 @media (max-width: 425px) {
-  .xs\:ml-auto {
-    margin-left: auto;
-  }
-
   .xs\:h-7 {
     height: 1.75rem;
   }

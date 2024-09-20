@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const logoFileNames = {
     ver1: "kg-logo(black).png",
     ver2: "kg-logo.png",
+    ver3: "kg-logo.png",
   };
 
   function updateBreakAllClass() {
@@ -165,10 +166,17 @@ document.addEventListener("DOMContentLoaded", function () {
     "visImp_changeColorTheme_ver3",
   );
 
+  function getBaseUrl() {
+    const pathArray = window.location.pathname.split("/");
+    const projectRootIndex = pathArray.indexOf("kgpk_front");
+    const basePath = pathArray.slice(0, projectRootIndex + 1).join("/");
+    return `${window.location.origin}${basePath}/src/img/`;
+  }
+
   function checkColorTheme(theme) {
-    const color = theme === "ver1"? "black" : "white";
-    const logoSrc = `${window.location.origin}/src/img/${logoFileNames[theme]}`;
-    
+    const color = theme === "ver1" ? "black" : "white";
+    const baseUrl = getBaseUrl();
+    const logoSrc = `${baseUrl}${logoFileNames[theme]}`;
 
     document.querySelectorAll("svg").forEach((icons) => {
       icons.setAttribute("stroke", color);
@@ -413,8 +421,11 @@ document.addEventListener("DOMContentLoaded", function () {
       element.classList.remove("outline", "outline-element_color");
     });
 
+    const baseUrl = getBaseUrl();
+
     logo.forEach((logos) => {
-      logos.setAttribute("src", `/src/img/${logoFileNames["ver2"]}`);
+      const logoPath = `${baseUrl}${logoFileNames["ver2"]}`;
+      logos.setAttribute("src", logoPath);
     });
 
     document.querySelectorAll("svg").forEach((icon) => {
@@ -486,22 +497,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // infoAboutEduOrg navigation 
+  // infoAboutEduOrg navigation
 
   const infoAboutEduOrgBtn = document.getElementById("infoAboutEduOrgBtn");
   const infoAboutEduOrgMenu = document.getElementById("infoAboutEduOrgMenu");
 
-  if (infoAboutEduOrgBtn){
+  if (infoAboutEduOrgBtn) {
     infoAboutEduOrgBtn.addEventListener("click", () => {
       infoAboutEduOrgMenu.classList.toggle("sm:hidden");
       infoAboutEduOrgMenu.classList.toggle("bg-basic_color_table_body");
       infoAboutEduOrgMenu.classList.toggle("p-4");
       infoAboutEduOrgBtn.classList.toggle("drop-shadow-md");
-      infoAboutEduOrgBtn.querySelector(".decoArrow").classList.toggle("rotate-90");
+      infoAboutEduOrgBtn
+        .querySelector(".decoArrow")
+        .classList.toggle("rotate-90");
     });
   }
 
-  // swipers 
+  // swipers
 
   function initSwiper(selector, options) {
     if (document.querySelector(selector)) {
