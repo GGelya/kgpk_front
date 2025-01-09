@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  
   @font-face {
     font-family: "Montserrat";
     src: url("../src/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
@@ -13,7 +12,8 @@
 
   @font-face {
     font-family: "Montserrat";
-    src: url("../src/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+    src: url("../src/fonts/Montserrat-Italic-VariableFont_wght.ttf")
+      format("truetype");
     font-weight: 100 900;
     font-style: italic;
   }
@@ -185,5 +185,10 @@
     --basic_color_deco1: 59 39 22;
     --basic_color_deco2: 59 39 22;
     --basic_color_deco3: 59 39 22;
+  }
+
+  .swiper-pagination-horizontal {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

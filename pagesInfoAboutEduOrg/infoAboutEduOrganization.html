@@ -7,7 +7,10 @@
 
     <link rel="stylesheet" href="../public/styles.css" />
     <link rel="preload" as="image" href="../src/img/bcg-baseinfo.webp" />
-    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/swiper/swiper-bundle.min.css"
+    />
     <script defer src="../scripts.js"></script>
     <script defer src="../node_modules/swiper/swiper-bundle.min.js"></script>
   </head>
@@ -413,7 +416,7 @@
               >
                 <li>
                   <a
-                  href="./infoAboutEduOrganization.html"
+                    href="./infoAboutEduOrganization.html"
                     id="hyperMenuMobileBtn_infoAboutEduOrg"
                     class="inline-block transform cursor-pointer transition duration-500 ease-in-out active:scale-x-110"
                     >Сведения об образовательной организации
@@ -1512,10 +1515,10 @@
           id="infoAboutEduOrgBtn"
           aria-label="Open menu for page Info about education organization"
           type="button"
-          class="outlineElement bg-basic_color_table_title p-[10px] w-full sm:block hidden"
+          class="outlineElement hidden w-full bg-basic_color_table_title p-[10px] sm:block"
         >
           <span
-            class="text-fluid_links font-semibold text-text_color_primary uppercase"
+            class="text-fluid_links font-semibold uppercase text-text_color_primary"
           >
             Разделы
           </span>
@@ -1525,7 +1528,7 @@
             viewBox="0 0 10 15"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="decoArrow inline-block transition-transform duration-200 h-2 w-2"
+            class="decoArrow inline-block h-2 w-2 transition-transform duration-200"
           >
             <path
               fill-rule="evenodd"
@@ -1535,29 +1538,87 @@
             />
           </svg>
         </button>
-        <div id="infoAboutEduOrgMenu" class="sm:hidden block">
-          <ul class="grid grid-cols-3 xs:grid-cols-2 xxs:grid-cols-1 text-fluid_links text-text_color_primary gap-4 outlineElement">
-            <li><a class="font-bold hover:underline" href="./infoAboutEduOrganization.html">Сведения об образовательной организации</a></li>
-            <li><a class="hover:underline" href="./baseinfo.html">Основные сведения</a></li>
-            <li><a class="hover:underline" href="./structEduOrg.html">Структура и органы управления образовательной организацией</a></li>
-            <li><a class="hover:underline" href="./docs.html">Документы</a></li>
-            <li><a class="hover:underline" href="./education.html">Образование</a></li>
-            <li><a class="hover:underline" href="./eduStandardsReqs.html">Образовательные стандарты и требования</a></li>
-            <li><a class="hover:underline" href="./leadersOfEduOrg.html">Руководство. Педагогический (научно-педагогический) состав</a></li>
-            <li><a class="hover:underline" href="./materialTechSupportEduProcess.html">Материально-техническое обеспечение и оснащённость образовательного
-              процесса</a> 
+        <div id="infoAboutEduOrgMenu" class="block sm:hidden">
+          <ul
+            class="outlineElement grid grid-cols-3 gap-4 text-fluid_links text-text_color_primary xs:grid-cols-2 xxs:grid-cols-1"
+          >
+            <li>
+              <a
+                class="font-bold hover:underline"
+                href="./infoAboutEduOrganization.html"
+                >Сведения об образовательной организации</a
+              >
             </li>
-            <li><a class="hover:underline" href="./studentSupportMeasures.html">Стипендии и меры поддержки обучающихся</a></li>
-            <li><a class="hover:underline" href="./paidEduServices.html">Платные образовательные услуги</a></li>
-            <li><a class="hover:underline" href="./finEconomActiv.html">Финансово-хозяйственная деятельность</a></li>
-            <li><a class="hover:underline" href="./studentVacantPlaces.html">Вакантные места для приема (перевода) обучающихся</a></li>
-            <li><a class="hover:underline" href="./accessibleEnv.html">Доступная среда</a></li>
-            <li><a class="hover:underline" href="./intlCoop.html">Международное сотрудничество</a></li>
-            <li><a class="hover:underline" href="./eduNutritionOrg.html">Организация питания в образовательной организации</a></li>
+            <li>
+              <a class="hover:underline" href="./baseinfo.html"
+                >Основные сведения</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline" href="./structEduOrg.html"
+                >Структура и органы управления образовательной организацией</a
+              >
+            </li>
+            <li><a class="hover:underline" href="./docs.html">Документы</a></li>
+            <li>
+              <a class="hover:underline" href="./education.html">Образование</a>
+            </li>
+            <li>
+              <a class="hover:underline" href="./eduStandardsReqs.html"
+                >Образовательные стандарты и требования</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline" href="./leadersOfEduOrg.html"
+                >Руководство. Педагогический (научно-педагогический) состав</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:underline"
+                href="./materialTechSupportEduProcess.html"
+                >Материально-техническое обеспечение и оснащённость
+                образовательного процесса</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline" href="./studentSupportMeasures.html"
+                >Стипендии и меры поддержки обучающихся</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline" href="./paidEduServices.html"
+                >Платные образовательные услуги</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline" href="./finEconomActiv.html"
+                >Финансово-хозяйственная деятельность</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline" href="./studentVacantPlaces.html"
+                >Вакантные места для приема (перевода) обучающихся</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline" href="./accessibleEnv.html"
+                >Доступная среда</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline" href="./intlCoop.html"
+                >Международное сотрудничество</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline" href="./eduNutritionOrg.html"
+                >Организация питания в образовательной организации</a
+              >
+            </li>
           </ul>
         </div>
       </div>
-      
     </section>
 
     <section id="infoAboutEduOrg__structOfWebEduOrg" class="pb-[100px]">
@@ -1659,60 +1720,60 @@
               информационно-телекоммуникационной сети "Интернет" и формату
               представления информации"</a
             >
-          </div> 
+          </div>
         </div>
       </div>
     </section>
 
     <section id="subsection_baseInfo" class="bg-basic_color_3 py-[100px]">
       <div
-        class="subsection_baseInfo-content container grid max-w-[1280px] grid-cols-2 gap-20 2md:grid-cols-1 xs:gap-10"
+        class="subsection_baseInfo-content container grid max-w-[1280px] grid-cols-1 gap-14 xs:gap-10"
       >
         <img
           src="../src/img/bcg-baseinfo.webp"
           alt="Фото подраздела Основные сведения"
-          class="h-full w-full object-cover object-center"
+          class="h-full max-h-[500px] w-full object-cover object-center 2md:max-h-full"
         />
         <div
           class="outlineElement flex flex-col gap-5 text-text_color_secondary"
         >
           <h1 class="text-fluid_title font-bold">Основные сведения</h1>
-          <ul class="flex flex-col gap-2 text-fluid">
-            <li class="truncate hover:underline">
+          <ul class="flex flex-col gap-4 text-fluid">
+            <li class="hover:underline">
               <a href=""
                 >О полном и сокращенном (при наличии) наименовании
                 образовательной организации</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href="">О дате создания образовательной организации</a>
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >Об учредителе (учредителях) образовательной организации</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >О месте нахождения образовательной организации, её
                 представительств и филиалов (при наличии представительств и
                 филиалов)</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >О режиме и графике работы образовательной организации, ее
                 представительств и филиалов (при наличии представительств и
                 филиалов)</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >О контактных телефонах и адресах электронной почты
                 образовательной организации</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >О местах осуществления образовательной деятельности, сведения о
                 которых в соответствии с Федеральным законом N 273-ФЗ не
@@ -1726,14 +1787,14 @@
                 адреса места нахождения.</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >О лицензии на осуществление образовательной деятельности
                 (выписке из реестра лицензий на осуществление образовательной
                 деятельности)</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >О наличии или об отсутствии государственной аккредитации
                 образовательной деятельности по реализуемым образовательным
@@ -1756,33 +1817,33 @@
 
     <section id="subsection_structAndGoverningBodies" class="py-[100px]">
       <div
-        class="subsection_structAndGoverningBodies-content container grid max-w-[1280px] grid-cols-2 gap-20 2md:grid-cols-1 xs:gap-10"
+        class="subsection_structAndGoverningBodies-content container grid max-w-[1280px] grid-cols-1 gap-14 xs:gap-10"
       >
         <div class="outlineElement flex flex-col gap-5 text-text_color_primary">
           <h1 class="text-fluid_title font-bold">
             Структура и органы управления образовательной организацией
           </h1>
-          <ul class="flex flex-col gap-2 text-fluid">
-            <li class="truncate hover:underline">
+          <ul class="flex flex-col gap-4 text-fluid">
+            <li class="hover:underline">
               <a href=""
                 >О наименовании структурного подразделения (органа
                 управления)</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >О фамилиях, именах, отчествах (при наличии отчества) и
                 должностях руководителей структурных подразделений</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >О месте нахождения структурных подразделений (органов
                 управления) образовательной организации (при наличии структурных
                 подразделений (органов управления)</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >Об адресах официальных сайтов в
                 информационно-телекоммуникационной сети "Интернет" структурных
@@ -1790,14 +1851,14 @@
                 (при наличии официальных сайтов)</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >Об адресах электронной почты структурных подразделений (органов
                 управления) образовательной организации (при наличии электронной
                 почты)</a
               >
             </li>
-            <li class="truncate hover:underline">
+            <li class="hover:underline">
               <a href=""
                 >О наличии положений о структурных подразделениях (об органах
                 управления) образовательной организации с приложением указанных
@@ -1813,7 +1874,7 @@
         <img
           src="../src/img/structAndGoverningBodies.webp"
           alt="Фото подраздела Структура и органы управления образовательной организацией"
-          class="h-full w-full object-cover object-center"
+          class="h-full max-h-[500px] w-full object-cover object-top 2md:max-h-full"
         />
       </div>
     </section>
@@ -1826,7 +1887,7 @@
         <div class="swiper swiper_infoAboutEduOrg h-[650px]">
           <div class="swiper-wrapper">
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">Документы</h1>
@@ -1835,20 +1896,20 @@
                   документов, самостоятельно разрабатываемых и утверждаемых
                   образовательной организацией)
                 </p>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href="">Устав образовательной организации</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Правила внутреннего распорядка обучающихся</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Правила внутреннего трудового распорядка</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Коллективный договор (при наличии)</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Локальные нормативные акты образовательной организации по
                       основным вопросам организации и осуществления
@@ -1856,10 +1917,10 @@
                       законом № 273-ФЗ</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Отчет о результатах самообследования</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Предписания органов, осуществляющих государственный
                       контроль (надзор) в сфере образования, отчетов об
@@ -1874,25 +1935,25 @@
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">Образование</h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href=""
                       >Об уровне общего или профессионального образования, о
                       наименовании образовательной программы (для
                       общеобразовательных программ)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О форме обучения (за исключением образовательных программ
                       дошкольного образования)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О нормативном сроке обучения, коде и наименовании
                       профессии, специальности (специальностей), направления
@@ -1904,7 +1965,7 @@
                       ассистентуры-стажировки)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О шифре и наименовании области науки, группы научных
                       специальностей, научной специальности (для образовательных
@@ -1913,7 +1974,7 @@
                       (адъюнктуре)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О направлениях и результатах научной
                       (научно-исследовательской) деятельности и
@@ -1923,7 +1984,7 @@
                       профессионального образования)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О численности обучающихся по реализуемым образовательным
                       программам за счет бюджетных ассигнований федерального
@@ -1933,7 +1994,7 @@
                       документа)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О численности обучающихся, являющихся иностранными
                       гражданами, по каждой общеобразовательной программе и
@@ -1943,12 +2004,12 @@
                       профессиональных образовательных программ)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О языках образования (в форме электронного документа)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О результатах приема по каждой профессии, специальности
                       среднего профессионального образования (при наличии
@@ -1964,7 +2025,7 @@
                       отчисления</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О трудоустройстве выпускников в виде численности
                       трудоустроенных выпускников прошлого учебного года,
@@ -1980,78 +2041,78 @@
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">Руководство</h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href=""
                       >Фамилия, имя, отчество (последнее - при наличии)
                       руководителя, его заместителей</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Должности руководителя, его заместителей</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Контактные телефоны</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Адреса электронной почты</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">
                   Педагогический состав
                 </h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href=""
                       >Фамилия, имя, отчество (при наличии) педагогического
                       работника</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Занимаемая должность (должности)</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Преподаваемые учебные предметы, курсы, дисциплины
                       (модули)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Уровень (уровни) профессионального образования с
                       указанием наименования направления подготовки и (или)
                       специальности, в том числе научной, и квалификации</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Ученая степень (при наличии)</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Ученое звание (при наличии)</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Сведения о повышении квалификации (за последние 3
                       года)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Сведения о профессиональной переподготовке (при
                       наличии)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Сведения о продолжительности опыта (лет) работы в
                       профессиональной сфере, соответствующей образовательной
@@ -2059,7 +2120,7 @@
                       дисциплин (модулей)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Наименование общеобразовательной программы
                       (общеобразовательных программ), код и наименование
@@ -2080,59 +2141,59 @@
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">
                   Материально-техническое обеспечение и оснащенность
                   образовательного процесса. Доступная среда
                 </h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href="">О наличии оборудованных учебных кабинетов</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О наличии оборудованных объектов для проведения
                       практических занятий</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">О наличии оборудованных библиотек</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">О наличии оборудованных объектов спорта</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О наличии оборудованных средств обучения и воспитания</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О доступе к информационным системам и
                       информационно-телекоммуникационным сетям</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О собственных электронных образовательных и
                       информационных ресурсах (при наличии)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О сторонних электронных образовательных и информационных
                       ресурсах (при наличии)</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О количестве жилых помещений в общежитии, интернате,
                       формировании платы за проживание в общежитии</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Об обеспечении доступа в здания образовательной
                       организации, в том числе в общежитие, интернат,
@@ -2140,7 +2201,7 @@
                       ограниченными возможностями здоровья</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О наличии специальных технических средств обучения
                       коллективного и индивидуального пользования инвалидов и
@@ -2151,27 +2212,27 @@
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">
                   Платные образовательные услуги
                 </h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href=""
                       >О порядке оказания платных образовательных услуг, в том
                       числе образец договора об оказании платных образовательных
                       услуг</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Об утверждении стоимости обучения по каждой
                       образовательной программе</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Об установлении размера платы, взимаемой с родителей
                       (законных представителей) за присмотр и уход за детьми,
@@ -2192,14 +2253,14 @@
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">
                   Финансово-хозяйственная деятельность
                 </h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href=""
                       >Об объеме образовательной деятельности, финансовое
                       обеспечение которой осуществляется за счет бюджетных
@@ -2209,19 +2270,19 @@
                       физических (юридических) лиц</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О поступлении финансовых и материальных средств по итогам
                       финансового года</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О расходовании финансовых и материальных средств по
                       итогам финансового года</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О плане финансово-хозяйственной деятельности
                       образовательной организации, утвержденном в установленном
@@ -2234,21 +2295,21 @@
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">
                   Вакантные места для приема (перевода) обучающихся
                 </h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href=""
                       >Финансируемые за счет бюджетных ассигнований федерального
                       бюджета, бюджетов субъектов Российской Федерации, местных
                       бюджетов</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >Финансируемые по договорам об образовании за счет средств
                       физических и (или) юридических лиц</a
@@ -2258,35 +2319,35 @@
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">
                   Стипендии и меры поддержки обучающихся
                 </h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href=""
                       >О наличии и условиях предоставления обучающимся
                       стипендий</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О наличии и условиях предоставления обучающимся мер
                       социальной поддержки</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">О наличии общежития, интерната</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О количестве жилых помещений в общежитии, интернате для
                       иногородних обучающихся</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О формировании платы за проживание в общежитии</a
                     >
@@ -2295,14 +2356,14 @@
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">
                   Международное сотрудничество
                 </h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href=""
                       >О заключенных и планируемых к заключению договорах с
                       иностранными и (или) международными организациями по
@@ -2313,35 +2374,35 @@
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">
                   Организация питания в образовательной организации
                 </h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href=""
                       >Об условиях питания и охраны здоровья обучающихся</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">О меню ежедневного горячего питания</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О наличии диетического меню в образовательной
                       организации</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О перечене юридических лиц и индивидуальных
                       предпринимателей, оказывающих услуги по организации
                       питания в общеобразовательной организациях</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О перечене юридических лиц и индивидуальных
                       предпринимателей, поставляющих (реализующих) пищевые
@@ -2349,7 +2410,7 @@
                       организации</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О форме обратной связи для родителей обучающихся и ответы
                       на вопросы родителей по питанию</a
@@ -2359,26 +2420,26 @@
               </div>
             </div>
             <div
-              class="swiper-slide outlineElement max-w-[550px] p-5 transition-opacity duration-100 bg-basic_color_table_body bg-opacity-50"
+              class="swiper-slide outlineElement max-w-[1200px] pb-14 overflow-y-auto bg-basic_color_table_body bg-opacity-50 p-5 transition-opacity duration-100 scrollbar scrollbar-track-transparent scrollbar-thumb-basic_color_3"
             >
               <div class="flex flex-col gap-5 text-text_color_primary">
                 <h1 class="text-fluid_title font-bold">
                   Образовательные стандарты и требования
                 </h1>
-                <ul class="flex flex-col gap-2 text-fluid">
-                  <li class="truncate hover:underline">
+                <ul class="flex flex-col gap-4 text-fluid">
+                  <li class="hover:underline">
                     <a href=""
                       >О федеральных государственных образовательных
                       стандартах</a
                     >
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">О федеральных государственных требованиях</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href="">Об образовательных стандартах (при наличии)</a>
                   </li>
-                  <li class="truncate hover:underline">
+                  <li class="hover:underline">
                     <a href=""
                       >О самостоятельно устанавливаемых образовательной
                       организацией высшего образования требованиях (при
@@ -2389,7 +2450,15 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination text-text_color_primary"></div>
+          <style>
+            .swiper-pagination {
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          </style>
+          <div
+            class="swiper-pagination max-w-max rounded-xl bg-basic_color_table_body p-2 text-text_color_primary "
+          ></div>
         </div>
       </div>
     </section>
