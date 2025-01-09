@@ -472,7 +472,7 @@ video {
   --text_color_primary: 0 0 0;
   --text_color_links: 0 34 129;
   --bg_color: 255 255 255;
-  --element_color: 255 255 255;
+  --element_color: 0 0 0;
   --basic_color_1: 0 76 224;
   --basic_color_2: 0 34 129;
   --basic_color_3: 35 35 35;
@@ -591,11 +591,6 @@ video {
   --basic_color_deco1: 59 39 22;
   --basic_color_deco2: 59 39 22;
   --basic_color_deco3: 59 39 22;
-}
-
-.swiper-pagination-horizontal {
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 *, ::before, ::after {
@@ -2429,14 +2424,6 @@ video {
   --tw-bg-opacity: 95%;
 }
 
-.bg-opacity-70 {
-  --tw-bg-opacity: 0.7;
-}
-
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
-}
-
 .bg-bg_studentBody {
   background-image: url('../src/img/studentBodyPhoto.webp');
 }
@@ -2713,6 +2700,10 @@ video {
   padding-bottom: 50px;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pb-\[100px\] {
   padding-bottom: 100px;
 }
@@ -2767,18 +2758,6 @@ video {
 
 .pt-\[50px\] {
   padding-top: 50px;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
-.pb-14 {
-  padding-bottom: 3.5rem;
 }
 
 .text-left {

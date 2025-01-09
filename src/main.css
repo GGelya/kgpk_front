@@ -186,9 +186,4 @@
     --basic_color_deco2: 59 39 22;
     --basic_color_deco3: 59 39 22;
   }
-
-  .swiper-pagination-horizontal {
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
