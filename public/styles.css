@@ -500,11 +500,24 @@ video {
 
 ol {
   list-style-type: decimal;
+  margin-left: 40px;
+  padding-left: 0;
+}
+
+.list_base {
+  list-style-type: disc;
+  margin-left: 40px;
+  padding-left: 0;
 }
 
 .text-text_color_links:hover {
   text-decoration: underline;
-  text-decoration-color: #002281;
+}
+
+td div{
+  max-height: 180px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .lv1 {
@@ -1120,10 +1133,6 @@ ol {
 
 .h-full {
   height: 100%;
-}
-
-.max-h-\[200px\] {
-  max-height: 200px;
 }
 
 .max-h-\[300px\] {
@@ -3605,16 +3614,12 @@ ol {
   --scrollbar-track: transparent !important;
 }
 
-.scrollbar-thumb-basic_color_3 {
-  --scrollbar-thumb: rgb(var(--basic_color_3) / 1) !important;
-}
-
 .scrollbar-thumb-element_color {
   --scrollbar-thumb: rgb(var(--element_color) / 1) !important;
 }
 
-.scrollbar-thumb-white {
-  --scrollbar-thumb: #fff !important;
+.scrollbar-thumb-element_color_panels {
+  --scrollbar-thumb: rgb(var(--element_color_panels) / 1) !important;
 }
 
 .\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {

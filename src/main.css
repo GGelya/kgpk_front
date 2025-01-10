@@ -64,15 +64,24 @@
 
   ol {
     list-style-type: decimal;
+    margin-left: 40px;
+    padding-left: 0;
   }
 
   .list_base {
     list-style-type: disc;
+    margin-left: 40px;
+    padding-left: 0;
   }
 
   .text-text_color_links:hover {
     text-decoration: underline;
-    text-decoration-color: #002281;
+  }
+
+  td div{
+    max-height: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .lv1 {
