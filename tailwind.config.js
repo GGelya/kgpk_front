@@ -59,6 +59,7 @@ module.exports = {
         'text_color_links':'rgb(var(--text_color_links) / <alpha-value>)',
         'bg_color':'rgb(var(--bg_color) / <alpha-value>)',
         'element_color':'rgb(var(--element_color) / <alpha-value>)',
+        'element_color_panels':'rgb(var(--element_color_panels) / <alpha-value>)',
         'basic_color_1':'rgb(var(--basic_color_1) / <alpha-value>)',
         'basic_color_2':'rgb(var(--basic_color_2) / <alpha-value>)',
         'basic_color_3':'rgb(var(--basic_color_3) / <alpha-value>)',

@@ -26,7 +26,8 @@
 
     --bg_color: 255 255 255;
 
-    --element_color: 255 255 255;
+    --element_color: 0 0 0;
+    --element_color_panels: 255 255 255;
 
     --basic_color_1: 0 76 224;
     --basic_color_2: 0 34 129;
@@ -59,6 +60,19 @@
 
     /* 12px to 14px */
     --fluid_links: clamp(0.75rem, 2.5vw + 0.5rem, 0.875rem);
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  .list_base {
+    list-style-type: disc;
+  }
+
+  .text-text_color_links:hover {
+    text-decoration: underline;
+    text-decoration-color: #002281;
   }
 
   .lv1 {
@@ -129,6 +143,7 @@
     --bg_color: 255 255 255;
 
     --element_color: 0 0 0;
+    --element_color_panels: 0 0 0;
 
     --basic_color_1: 255 255 255;
     --basic_color_2: 255 255 255;
@@ -151,6 +166,7 @@
     --bg_color: 0 0 0;
 
     --element_color: 255 255 255;
+    --element_color_panels: 255 255 255;
 
     --basic_color_1: 0 0 0;
     --basic_color_2: 0 0 0;
@@ -173,6 +189,7 @@
     --bg_color: 59 39 22;
 
     --element_color: 169 228 77;
+    --element_color_panels: 169 228 77;
 
     --basic_color_1: 59 39 22;
     --basic_color_2: 59 39 22;

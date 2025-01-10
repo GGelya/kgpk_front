@@ -473,6 +473,7 @@ video {
   --text_color_links: 0 34 129;
   --bg_color: 255 255 255;
   --element_color: 0 0 0;
+  --element_color_panels: 255 255 255;
   --basic_color_1: 0 76 224;
   --basic_color_2: 0 34 129;
   --basic_color_3: 35 35 35;
@@ -495,6 +496,15 @@ video {
   --fluid_menu_section: clamp(1.25rem, 2.5vw + 0.5rem, 1.625rem);
   /* 12px to 14px */
   --fluid_links: clamp(0.75rem, 2.5vw + 0.5rem, 0.875rem);
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+.text-text_color_links:hover {
+  text-decoration: underline;
+  text-decoration-color: #002281;
 }
 
 .lv1 {
@@ -548,6 +558,7 @@ video {
   --text_color_links: 0 0 0;
   --bg_color: 255 255 255;
   --element_color: 0 0 0;
+  --element_color_panels: 0 0 0;
   --basic_color_1: 255 255 255;
   --basic_color_2: 255 255 255;
   --basic_color_3: 255 255 255;
@@ -565,6 +576,7 @@ video {
   --text_color_links: 255 255 255;
   --bg_color: 0 0 0;
   --element_color: 255 255 255;
+  --element_color_panels: 255 255 255;
   --basic_color_1: 0 0 0;
   --basic_color_2: 0 0 0;
   --basic_color_3: 0 0 0;
@@ -582,6 +594,7 @@ video {
   --text_color_links: 169 228 77;
   --bg_color: 59 39 22;
   --element_color: 169 228 77;
+  --element_color_panels: 169 228 77;
   --basic_color_1: 59 39 22;
   --basic_color_2: 59 39 22;
   --basic_color_3: 59 39 22;
@@ -1107,6 +1120,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.max-h-\[200px\] {
+  max-height: 200px;
 }
 
 .max-h-\[300px\] {
@@ -2386,6 +2403,11 @@ video {
   background-color: rgb(var(--element_color) / var(--tw-bg-opacity));
 }
 
+.bg-element_color_panels {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--element_color_panels) / var(--tw-bg-opacity));
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -3268,6 +3290,10 @@ video {
   outline-color: rgb(var(--element_color) / 1);
 }
 
+.outline-element_color_panels {
+  outline-color: rgb(var(--element_color_panels) / 1);
+}
+
 .ring {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -3585,6 +3611,10 @@ video {
 
 .scrollbar-thumb-element_color {
   --scrollbar-thumb: rgb(var(--element_color) / 1) !important;
+}
+
+.scrollbar-thumb-white {
+  --scrollbar-thumb: #fff !important;
 }
 
 .\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {
