@@ -43,23 +43,53 @@
 
     /* fontsize  */
 
-    /* 14px to 18px */
-    --fluid: clamp(0.875rem, 2.5vw + 0.5rem, 1.125rem);
+    /* 14px to 16px */
+    --fluid: clamp(0.875rem, 0.8417rem + 0.2222vw, 1rem);
 
-    /* 20px to 26px */
-    --fluid_title: clamp(1.25rem, 2.5vw + 0.5rem, 1.625rem);
-
-    /* 12px to 16px */
-    --fluid_subtitle: clamp(0.75rem, 2.5vw + 0.5rem, 1rem);
+    /* 16px to 20px */
+    --fluid_title: clamp(1rem, 0.9333rem + 0.4444vw, 1.25rem);
 
     /* 20px to 24px */
-    --fluid_card_title: clamp(1.25rem, 2.5vw + 0.5rem, 1.5rem);
-
-    /* 20px to 26px */
-    --fluid_menu_section: clamp(1.25rem, 2.5vw + 0.5rem, 1.625rem);
+    --fluid_title_main: clamp(1.25rem, 1.1833rem + 0.4444vw, 1.5rem);
 
     /* 12px to 14px */
-    --fluid_links: clamp(0.75rem, 2.5vw + 0.5rem, 0.875rem);
+    --fluid_subtitle: clamp(0.75rem, 0.7167rem + 0.2222vw, 0.875rem);
+
+    /* 16px to 20px */
+    --fluid_card_title: clamp(1rem, 0.9333rem + 0.4444vw, 1.25rem);
+
+    /* 18px to 22px */
+    --fluid_menu_section: clamp(1.125rem, 1.0583rem + 0.4444vw, 1.375rem);
+
+    /* 12px to 14px */
+    --fluid_links: clamp(0.75rem, 0.7167rem + 0.2222vw, 0.875rem);
+  }
+
+  table {
+    /* 10px to 12px */
+    --fluid: clamp(0.625rem, 0.5917rem + 0.2222vw, 0.75rem);
+  }
+
+  .lv1 table {
+    /* 10px to 12px */
+    --fluid: clamp(0.625rem, 0.5917rem + 0.2222vw, 0.75rem);
+  }
+
+  .lv2 table {
+    /* 12px to 14px */
+    --fluid: clamp(0.75rem, 0.7167rem + 0.2222vw, 0.875rem);
+  }
+
+  .lv3 table {
+    /* 14px to 16px */
+    --fluid: clamp(0.875rem, 0.8417rem + 0.2222vw, 1rem);
+  }
+
+  table,
+  td,
+  th {
+    border-collapse: collapse;
+    border: 0.5px solid;
   }
 
   ol {
@@ -78,70 +108,79 @@
     text-decoration: underline;
   }
 
-  td div{
-    max-height: 180px;
+  td div {
+    max-height: 100px;
     overflow-y: auto;
     overflow-x: hidden;
   }
 
   .lv1 {
-    /* 14px to 18px */
-    --fluid: clamp(0.875rem, 2.5vw + 0.5rem, 1.125rem);
+    /* 14px to 16px */
+    --fluid: clamp(0.875rem, 0.8417rem + 0.2222vw, 1rem);
 
-    /* 20px to 26px */
-    --fluid_title: clamp(1.25rem, 2.5vw + 0.5rem, 1.625rem);
-
-    /* 12px to 16px */
-    --fluid_subtitle: clamp(0.75rem, 2.5vw + 0.5rem, 1rem);
+    /* 16px to 20px */
+    --fluid_title: clamp(1rem, 0.9333rem + 0.4444vw, 1.25rem);
 
     /* 20px to 24px */
-    --fluid_card_title: clamp(1.25rem, 2.5vw + 0.5rem, 1.5rem);
-
-    /* 20px to 26px */
-    --fluid_menu_section: clamp(1.25rem, 2.5vw + 0.5rem, 1.625rem);
+    --fluid_title_main: clamp(1.25rem, 1.1833rem + 0.4444vw, 1.5rem);
 
     /* 12px to 14px */
-    --fluid_links: clamp(0.75rem, 2.5vw + 0.5rem, 0.875rem);
+    --fluid_subtitle: clamp(0.75rem, 0.7167rem + 0.2222vw, 0.875rem);
+
+    /* 16px to 20px */
+    --fluid_card_title: clamp(1rem, 0.9333rem + 0.4444vw, 1.25rem);
+
+    /* 18px to 22px */
+    --fluid_menu_section: clamp(1.125rem, 1.0583rem + 0.4444vw, 1.375rem);
+
+    /* 12px to 14px */
+    --fluid_links: clamp(0.75rem, 0.7167rem + 0.2222vw, 0.875rem);
   }
 
   .lv2 {
-    /* 16px to 20px */
-    --fluid: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+    /* 16px to 18px */
+    --fluid: clamp(1rem, 0.9667rem + 0.2222vw, 1.125rem);
 
-    /* 22px to 28px */
-    --fluid_title: clamp(1.375rem, 2.5vw + 0.5rem, 1.75rem);
-
-    /* 14px to 18px */
-    --fluid_subtitle: clamp(0.875rem, 2.5vw + 0.5rem, 1.125rem);
+    /* 18px to 22px */
+    --fluid_title: clamp(1.125rem, 1.0583rem + 0.4444vw, 1.375rem);
 
     /* 22px to 26px */
-    --fluid_card_title: clamp(1.375rem, 2.5vw + 0.5rem, 1.625rem);
-
-    /* 22px to 28px */
-    --fluid_menu_section: clamp(1.375rem, 2.5vw + 0.5rem, 1.75rem);
+    --fluid_title_main: clamp(1.375rem, 1.3083rem + 0.4444vw, 1.625rem);
 
     /* 14px to 16px */
-    --fluid_links: clamp(0.875rem, 2.5vw + 0.5rem, 1rem);
+    --fluid_subtitle: clamp(0.875rem, 0.8417rem + 0.2222vw, 1rem);
+
+    /* 18px to 22px */
+    --fluid_card_title: clamp(1.125rem, 1.0583rem + 0.4444vw, 1.375rem);
+
+    /* 20px to 24px */
+    --fluid_menu_section: clamp(1.25rem, 1.1833rem + 0.4444vw, 1.5rem);
+
+    /* 14px to 16px */
+    --fluid_links: clamp(0.875rem, 0.8417rem + 0.2222vw, 1rem);
   }
 
   .lv3 {
-    /* 18px to 22px */
-    --fluid: clamp(1.125rem, 2.5vw + 0.5rem, 1.375rem);
+    /* 18px to 20px */
+    --fluid: clamp(1.125rem, 1.0917rem + 0.2222vw, 1.25rem);
 
-    /* 24px to 30px */
-    --fluid_title: clamp(1.5rem, 2.5vw + 0.5rem, 1.875rem);
-
-    /* 16px to 20px */
-    --fluid_subtitle: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+    /* 20px to 24px */
+    --fluid_title: clamp(1.25rem, 1.1833rem + 0.4444vw, 1.5rem);
 
     /* 24px to 28px */
-    --fluid_card_title: clamp(1.5rem, 2.5vw + 0.5rem, 1.75rem);
-
-    /* 24px to 30px */
-    --fluid_menu_section: clamp(1.5rem, 2.5vw + 0.5rem, 1.875rem);
+    --fluid_title_main: clamp(1.5rem, 1.4333rem + 0.4444vw, 1.75rem);
 
     /* 16px to 18px */
-    --fluid_links: clamp(1rem, 2.5vw + 0.5rem, 1.125rem);
+    --fluid_subtitle: clamp(1rem, 0.9667rem + 0.2222vw, 1.125rem);
+
+    /* 20px to 24px */
+    --fluid_card_title: clamp(1.25rem, 1.1833rem + 0.4444vw, 1.5rem);
+
+    /* 24px to 26px */
+    --fluid_menu_section: clamp(1.5rem, 1.4667rem + 0.2222vw, 1.625rem);
+
+    /* 16px to 18px */
+    --fluid_links: clamp(1rem, 0.9667rem + 0.2222vw, 1.125rem);
   }
 
   .ver1 {

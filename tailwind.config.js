@@ -43,6 +43,7 @@ module.exports = {
       fontSize: {
         fluid: 'var(--fluid)',
         fluid_title: 'var(--fluid_title)',
+        fluid_title_main: 'var(--fluid_title_main)',
         fluid_subtitle: 'var(--fluid_subtitle)',
         fluid_card_title: 'var(--fluid_card_title)',
         fluid_menu_section: 'var(--fluid_menu_section)',
