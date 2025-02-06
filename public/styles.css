@@ -525,6 +525,7 @@ table,
   th {
   border-collapse: collapse;
   border: 0.5px solid;
+  padding: 0.5rem!important;
 }
 
 ol {
@@ -2766,6 +2767,11 @@ td div {
   padding-bottom: 50px;
 }
 
+.py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -2824,6 +2830,26 @@ td div {
 
 .pt-\[50px\] {
   padding-top: 50px;
+}
+
+.pt-\[25px\] {
+  padding-top: 25px;
+}
+
+.pb-\[\] {
+  padding-bottom: ;
+}
+
+.pb-\[25px\] {
+  padding-bottom: 25px;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[5px\] {
+  padding-top: 5px;
 }
 
 .text-left {
