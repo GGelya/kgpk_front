@@ -3,6 +3,66 @@ document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll(".section_mobile");
   const sectionsContent = document.querySelectorAll(".section__content_mobile");
 
+  // Dialog window
+
+  const dialogWindowOverlay = document.getElementById("dialog_window_overlay");
+  const dialogWindow = document.getElementById("dialog_window");
+  const dialogWindowBtnReject = document.getElementById(
+    "dialog_window__btn_reject",
+  );
+  const dialogWindowBtnAccept = document.getElementById(
+    "dialog_window__btn_accept",
+  );
+
+  function showDialogWindow() {
+    if (dialogWindowOverlay) {
+      dialogWindowOverlay.classList.remove("hidden");
+    }
+    setTimeout(() => {
+      if (dialogWindow) {
+        dialogWindow.classList.remove("opacity-0", "translate-y-[-20px]");
+        dialogWindow.classList.add("opacity-100", "translate-y-0");
+      }
+      document.body.classList.add("overflow-hidden");
+    }, 10);
+  }
+
+  function hideDialogWindow() {
+    if (dialogWindow) {
+      dialogWindow.classList.remove("opacity-100", "translate-y-0");
+      dialogWindow.classList.add("opacity-0", "translate-y-[-20px]");
+    }
+
+    setTimeout(() => {
+      if (dialogWindowOverlay) {
+        dialogWindowOverlay.classList.add("hidden");
+      }
+      document.body.classList.remove("overflow-hidden");
+    }, 300);
+
+    localStorage.setItem("dialogWindowShown", "true");
+  }
+
+  if (dialogWindowBtnReject) {
+    dialogWindowBtnReject.addEventListener("click", hideDialogWindow);
+  }
+
+  if (dialogWindowBtnAccept) {
+    dialogWindowBtnAccept .addEventListener("click", hideDialogWindow);
+  }
+
+  if (dialogWindowOverlay) {
+    dialogWindowOverlay.addEventListener("click", (event) => {
+      if (event.target === dialogWindowOverlay) {
+        hideDialogWindow();
+      }
+    });
+  }
+
+  if (localStorage.getItem("dialogWindowShown") !== "true") {
+    showDialogWindow();
+  }
+
   // Mobile
 
   document.querySelectorAll(".navMenuMobile__btn a").forEach((item) => {
